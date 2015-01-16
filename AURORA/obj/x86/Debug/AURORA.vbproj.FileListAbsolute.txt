@@ -20,3 +20,17 @@ F:\_Work\pjd\AURORA\AURORA\AURORA\bin\Debug\AURORA.xml
 F:\_Work\pjd\AURORA\AURORA\AURORA\obj\x86\Debug\AURORA.frmLogin.resources
 F:\_Work\pjd\AURORA\AURORA\AURORA\obj\x86\Debug\AURORA.Resources.resources
 F:\_Work\pjd\AURORA\AURORA\AURORA\obj\x86\Debug\AURORA.vbproj.GenerateResource.Cache
+F:\_Work\pjd\AURORA\Code\pjd-aurora\AURORA\bin\Debug\AURORA.exe.config
+F:\_Work\pjd\AURORA\Code\pjd-aurora\AURORA\obj\x86\Debug\AURORA.exe
+F:\_Work\pjd\AURORA\Code\pjd-aurora\AURORA\obj\x86\Debug\AURORA.xml
+F:\_Work\pjd\AURORA\Code\pjd-aurora\AURORA\obj\x86\Debug\AURORA.pdb
+F:\_Work\pjd\AURORA\Code\pjd-aurora\AURORA\obj\x86\Debug\AURORA.frmLogin.resources
+F:\_Work\pjd\AURORA\Code\pjd-aurora\AURORA\obj\x86\Debug\AURORA.Resources.resources
+F:\_Work\pjd\AURORA\Code\pjd-aurora\AURORA\obj\x86\Debug\AURORA.vbproj.GenerateResource.Cache
+F:\_Work\pjd\AURORA\Code\pjd-aurora\AURORA\bin\Debug\AURORA.exe
+F:\_Work\pjd\AURORA\Code\pjd-aurora\AURORA\bin\Debug\AURORA.pdb
+F:\_Work\pjd\AURORA\Code\pjd-aurora\AURORA\bin\Debug\AURORA.xml
+F:\_Work\pjd\AURORA\Code\pjd-aurora\AURORA\obj\x86\Debug\AURORA.cmpLabel.resources
+F:\_Work\pjd\AURORA\Code\pjd-aurora\AURORA\obj\x86\Debug\AURORA.frmMenuAdmin.resources
+F:\_Work\pjd\AURORA\Code\pjd-aurora\AURORA\obj\x86\Debug\AURORA.frmBase.resources
+F:\_Work\pjd\AURORA\Code\pjd-aurora\AURORA\obj\x86\Debug\AURORA.resFormName.resources

@@ -1,6 +1,7 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class frmBase
-    Inherits System.Windows.Forms.Form
+Partial Class frmMenuAdmin
+    'Inherits System.Windows.Forms.Form
+	Inherits frmBase
 
     'Form overrides dispose to clean up the component list.
     <System.Diagnostics.DebuggerNonUserCode()> _
@@ -24,16 +25,14 @@ Partial Class frmBase
     Private Sub InitializeComponent()
         Me.SuspendLayout()
         '
-        'frmBase
+        'frmMenuAdmin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(284, 261)
-        Me.Name = "frmBase"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Form1"
+        Me.Name = "frmMenuAdmin"
+        Me.Text = "frmMenuAdmin"
         Me.ResumeLayout(False)
 
     End Sub
-
 End Class
