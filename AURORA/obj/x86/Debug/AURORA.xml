@@ -1,0 +1,1274 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+AURORA
+</name>
+</assembly>
+<members>
+<member name="M:AURORA.AURORAEntities.#ctor">
+	<summary>
+ Initializes a new AURORAEntities object using the connection string found in the 'AURORAEntities' section of the application configuration file.
+ </summary>
+</member><member name="M:AURORA.AURORAEntities.#ctor(System.String)">
+	<summary>
+ Initialize a new AURORAEntities object.
+ </summary>
+</member><member name="M:AURORA.AURORAEntities.#ctor(System.Data.EntityClient.EntityConnection)">
+	<summary>
+ Initialize a new AURORAEntities object.
+ </summary>
+</member><member name="P:AURORA.AURORAEntities.CategoryGold">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.AURORAEntities.CategoryPledgeGold">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.AURORAEntities.DetailSale">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.AURORAEntities.Employee">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.AURORAEntities.FormatGold">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.AURORAEntities.FormatPledgeGold">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.AURORAEntities.GoldModel">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.AURORAEntities.GoldPledge">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.AURORAEntities.GoldPledgeWeight">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.AURORAEntities.GoldWeight">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.AURORAEntities.Member">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.AURORAEntities.OrderGold">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.AURORAEntities.PatternGold">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.AURORAEntities.PatternPledgeGold">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.AURORAEntities.Payment">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.AURORAEntities.PercentGold">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.AURORAEntities.PercentPledgeGold">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.AURORAEntities.Permis">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.AURORAEntities.PledgeGold">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.AURORAEntities.Province">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.AURORAEntities.Sale">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.AURORAEntities.SizeGold">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.AURORAEntities.SizePledgeGold">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.AURORAEntities.sysdiagrams">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="M:AURORA.AURORAEntities.AddToCategoryGold(AURORA.CategoryGold)">
+	<summary>
+ Deprecated Method for adding a new object to the CategoryGold EntitySet. Consider using the .Add method of the associated ObjectSet(Of T) property instead.
+ </summary>
+</member><member name="M:AURORA.AURORAEntities.AddToCategoryPledgeGold(AURORA.CategoryPledgeGold)">
+	<summary>
+ Deprecated Method for adding a new object to the CategoryPledgeGold EntitySet. Consider using the .Add method of the associated ObjectSet(Of T) property instead.
+ </summary>
+</member><member name="M:AURORA.AURORAEntities.AddToDetailSale(AURORA.DetailSale)">
+	<summary>
+ Deprecated Method for adding a new object to the DetailSale EntitySet. Consider using the .Add method of the associated ObjectSet(Of T) property instead.
+ </summary>
+</member><member name="M:AURORA.AURORAEntities.AddToEmployee(AURORA.Employee)">
+	<summary>
+ Deprecated Method for adding a new object to the Employee EntitySet. Consider using the .Add method of the associated ObjectSet(Of T) property instead.
+ </summary>
+</member><member name="M:AURORA.AURORAEntities.AddToFormatGold(AURORA.FormatGold)">
+	<summary>
+ Deprecated Method for adding a new object to the FormatGold EntitySet. Consider using the .Add method of the associated ObjectSet(Of T) property instead.
+ </summary>
+</member><member name="M:AURORA.AURORAEntities.AddToFormatPledgeGold(AURORA.FormatPledgeGold)">
+	<summary>
+ Deprecated Method for adding a new object to the FormatPledgeGold EntitySet. Consider using the .Add method of the associated ObjectSet(Of T) property instead.
+ </summary>
+</member><member name="M:AURORA.AURORAEntities.AddToGoldModel(AURORA.GoldModel)">
+	<summary>
+ Deprecated Method for adding a new object to the GoldModel EntitySet. Consider using the .Add method of the associated ObjectSet(Of T) property instead.
+ </summary>
+</member><member name="M:AURORA.AURORAEntities.AddToGoldPledge(AURORA.GoldPledge)">
+	<summary>
+ Deprecated Method for adding a new object to the GoldPledge EntitySet. Consider using the .Add method of the associated ObjectSet(Of T) property instead.
+ </summary>
+</member><member name="M:AURORA.AURORAEntities.AddToGoldPledgeWeight(AURORA.GoldPledgeWeight)">
+	<summary>
+ Deprecated Method for adding a new object to the GoldPledgeWeight EntitySet. Consider using the .Add method of the associated ObjectSet(Of T) property instead.
+ </summary>
+</member><member name="M:AURORA.AURORAEntities.AddToGoldWeight(AURORA.GoldWeight)">
+	<summary>
+ Deprecated Method for adding a new object to the GoldWeight EntitySet. Consider using the .Add method of the associated ObjectSet(Of T) property instead.
+ </summary>
+</member><member name="M:AURORA.AURORAEntities.AddToMember(AURORA.Member)">
+	<summary>
+ Deprecated Method for adding a new object to the Member EntitySet. Consider using the .Add method of the associated ObjectSet(Of T) property instead.
+ </summary>
+</member><member name="M:AURORA.AURORAEntities.AddToOrderGold(AURORA.OrderGold)">
+	<summary>
+ Deprecated Method for adding a new object to the OrderGold EntitySet. Consider using the .Add method of the associated ObjectSet(Of T) property instead.
+ </summary>
+</member><member name="M:AURORA.AURORAEntities.AddToPatternGold(AURORA.PatternGold)">
+	<summary>
+ Deprecated Method for adding a new object to the PatternGold EntitySet. Consider using the .Add method of the associated ObjectSet(Of T) property instead.
+ </summary>
+</member><member name="M:AURORA.AURORAEntities.AddToPatternPledgeGold(AURORA.PatternPledgeGold)">
+	<summary>
+ Deprecated Method for adding a new object to the PatternPledgeGold EntitySet. Consider using the .Add method of the associated ObjectSet(Of T) property instead.
+ </summary>
+</member><member name="M:AURORA.AURORAEntities.AddToPayment(AURORA.Payment)">
+	<summary>
+ Deprecated Method for adding a new object to the Payment EntitySet. Consider using the .Add method of the associated ObjectSet(Of T) property instead.
+ </summary>
+</member><member name="M:AURORA.AURORAEntities.AddToPercentGold(AURORA.PercentGold)">
+	<summary>
+ Deprecated Method for adding a new object to the PercentGold EntitySet. Consider using the .Add method of the associated ObjectSet(Of T) property instead.
+ </summary>
+</member><member name="M:AURORA.AURORAEntities.AddToPercentPledgeGold(AURORA.PercentPledgeGold)">
+	<summary>
+ Deprecated Method for adding a new object to the PercentPledgeGold EntitySet. Consider using the .Add method of the associated ObjectSet(Of T) property instead.
+ </summary>
+</member><member name="M:AURORA.AURORAEntities.AddToPermis(AURORA.Permis)">
+	<summary>
+ Deprecated Method for adding a new object to the Permis EntitySet. Consider using the .Add method of the associated ObjectSet(Of T) property instead.
+ </summary>
+</member><member name="M:AURORA.AURORAEntities.AddToPledgeGold(AURORA.PledgeGold)">
+	<summary>
+ Deprecated Method for adding a new object to the PledgeGold EntitySet. Consider using the .Add method of the associated ObjectSet(Of T) property instead.
+ </summary>
+</member><member name="M:AURORA.AURORAEntities.AddToProvince(AURORA.Province)">
+	<summary>
+ Deprecated Method for adding a new object to the Province EntitySet. Consider using the .Add method of the associated ObjectSet(Of T) property instead.
+ </summary>
+</member><member name="M:AURORA.AURORAEntities.AddToSale(AURORA.Sale)">
+	<summary>
+ Deprecated Method for adding a new object to the Sale EntitySet. Consider using the .Add method of the associated ObjectSet(Of T) property instead.
+ </summary>
+</member><member name="M:AURORA.AURORAEntities.AddToSizeGold(AURORA.SizeGold)">
+	<summary>
+ Deprecated Method for adding a new object to the SizeGold EntitySet. Consider using the .Add method of the associated ObjectSet(Of T) property instead.
+ </summary>
+</member><member name="M:AURORA.AURORAEntities.AddToSizePledgeGold(AURORA.SizePledgeGold)">
+	<summary>
+ Deprecated Method for adding a new object to the SizePledgeGold EntitySet. Consider using the .Add method of the associated ObjectSet(Of T) property instead.
+ </summary>
+</member><member name="M:AURORA.AURORAEntities.AddTosysdiagrams(AURORA.sysdiagrams)">
+	<summary>
+ Deprecated Method for adding a new object to the sysdiagrams EntitySet. Consider using the .Add method of the associated ObjectSet(Of T) property instead.
+ </summary>
+</member><member name="T:AURORA.AURORAEntities">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="M:AURORA.CategoryGold.CreateCategoryGold(System.String)">
+	<summary>
+ Create a new CategoryGold object.
+ </summary>
+	<param name="categoryGold_Id">Initial value of the CategoryGold_Id property.</param>
+</member><member name="P:AURORA.CategoryGold.CategoryGold_Id">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.CategoryGold.CategoryGold_Name">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.CategoryGold.GoldModel">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.CategoryGold.OrderGold">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="T:AURORA.CategoryGold">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="M:AURORA.CategoryPledgeGold.CreateCategoryPledgeGold(System.String)">
+	<summary>
+ Create a new CategoryPledgeGold object.
+ </summary>
+	<param name="categoryPledgeGold_Id">Initial value of the CategoryPledgeGold_Id property.</param>
+</member><member name="P:AURORA.CategoryPledgeGold.CategoryPledgeGold_Id">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.CategoryPledgeGold.CategoryPledgeGold_Name">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.CategoryPledgeGold.GoldPledge">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="T:AURORA.CategoryPledgeGold">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="M:AURORA.DetailSale.CreateDetailSale(System.String)">
+	<summary>
+ Create a new DetailSale object.
+ </summary>
+	<param name="sale_Id">Initial value of the Sale_Id property.</param>
+</member><member name="P:AURORA.DetailSale.Sale_Id">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.DetailSale.Gold_Id">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.DetailSale.Gold_Amount">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.DetailSale.GoldModel">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.DetailSale.GoldModelReference">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.DetailSale.Sale">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.DetailSale.SaleReference">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="T:AURORA.DetailSale">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="M:AURORA.Employee.CreateEmployee(System.String)">
+	<summary>
+ Create a new Employee object.
+ </summary>
+	<param name="employee_Id">Initial value of the Employee_Id property.</param>
+</member><member name="P:AURORA.Employee.Employee_Id">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.Employee.Employee_Name">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.Employee.Employee_SurName">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.Employee.Ident_Number">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.Employee.Employee_Sex">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.Employee.Employee_Address">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.Employee.UserName">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.Employee.PassWord">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.Employee.Permis_Id">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.Employee.Permis">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.Employee.PermisReference">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.Employee.OrderGold">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.Employee.PledgeGold">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.Employee.Sale">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="T:AURORA.Employee">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="M:AURORA.FormatGold.CreateFormatGold(System.String)">
+	<summary>
+ Create a new FormatGold object.
+ </summary>
+	<param name="formatGold_Id">Initial value of the FormatGold_Id property.</param>
+</member><member name="P:AURORA.FormatGold.FormatGold_Id">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.FormatGold.FormatGold_Name">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.FormatGold.Prices_aretired_bundle">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.FormatGold.GoldModel">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.FormatGold.OrderGold">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="T:AURORA.FormatGold">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="M:AURORA.FormatPledgeGold.CreateFormatPledgeGold(System.String)">
+	<summary>
+ Create a new FormatPledgeGold object.
+ </summary>
+	<param name="formatPledgeGold_Id">Initial value of the FormatPledgeGold_Id property.</param>
+</member><member name="P:AURORA.FormatPledgeGold.FormatPledgeGold_Id">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.FormatPledgeGold.FormatPledgeGold_Name">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.FormatPledgeGold.GoldPledge">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="T:AURORA.FormatPledgeGold">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="M:AURORA.GoldModel.CreateGoldModel(System.String)">
+	<summary>
+ Create a new GoldModel object.
+ </summary>
+	<param name="gold_Id">Initial value of the Gold_Id property.</param>
+</member><member name="P:AURORA.GoldModel.Gold_Id">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.GoldModel.Gold_Amount">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.GoldModel.Total_Price">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.GoldModel.Goldweight_Id">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.GoldModel.FormatGold_Id">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.GoldModel.CategoryGold_Id">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.GoldModel.PatternGold_Id">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.GoldModel.SizeGold_Id">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.GoldModel.PercentGold_Id">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.GoldModel.CategoryGold">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.GoldModel.CategoryGoldReference">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.GoldModel.DetailSale">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.GoldModel.FormatGold">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.GoldModel.FormatGoldReference">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.GoldModel.GoldWeight">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.GoldModel.GoldWeightReference">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.GoldModel.PatternGold">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.GoldModel.PatternGoldReference">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.GoldModel.PercentGold">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.GoldModel.PercentGoldReference">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.GoldModel.SizeGold">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.GoldModel.SizeGoldReference">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="T:AURORA.GoldModel">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="M:AURORA.GoldPledge.CreateGoldPledge(System.String)">
+	<summary>
+ Create a new GoldPledge object.
+ </summary>
+	<param name="goldPledge_Id">Initial value of the GoldPledge_Id property.</param>
+</member><member name="P:AURORA.GoldPledge.GoldPledge_Id">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.GoldPledge.Price_GoldPledge">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.GoldPledge.FormatPledgeGold_Id">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.GoldPledge.CategoryPledgeGold_Id">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.GoldPledge.SizePledgeGold_Id">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.GoldPledge.PatternPledgeGold_Id">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.GoldPledge.GoldPledgeWeight_Id">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.GoldPledge.PercentPledgeGold_Id">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.GoldPledge.CategoryPledgeGold">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.GoldPledge.CategoryPledgeGoldReference">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.GoldPledge.FormatPledgeGold">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.GoldPledge.FormatPledgeGoldReference">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.GoldPledge.GoldPledgeWeight">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.GoldPledge.GoldPledgeWeightReference">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.GoldPledge.PatternPledgeGold">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.GoldPledge.PatternPledgeGoldReference">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.GoldPledge.PercentPledgeGold">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.GoldPledge.PercentPledgeGoldReference">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.GoldPledge.SizePledgeGold">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.GoldPledge.SizePledgeGoldReference">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.GoldPledge.PledgeGold">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="T:AURORA.GoldPledge">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="M:AURORA.GoldPledgeWeight.CreateGoldPledgeWeight(System.String)">
+	<summary>
+ Create a new GoldPledgeWeight object.
+ </summary>
+	<param name="goldPledgeWeight_Id">Initial value of the GoldPledgeWeight_Id property.</param>
+</member><member name="P:AURORA.GoldPledgeWeight.GoldPledgeWeight_Id">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.GoldPledgeWeight.GoldPledgeWeight_Name">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.GoldPledgeWeight.GoldPledge">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="T:AURORA.GoldPledgeWeight">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="M:AURORA.GoldWeight.CreateGoldWeight(System.String)">
+	<summary>
+ Create a new GoldWeight object.
+ </summary>
+	<param name="goldWeight_Id">Initial value of the GoldWeight_Id property.</param>
+</member><member name="P:AURORA.GoldWeight.GoldWeight_Id">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.GoldWeight.GoldWeight_Name">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.GoldWeight.GoldModel">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.GoldWeight.OrderGold">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="T:AURORA.GoldWeight">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="M:AURORA.Member.CreateMember(System.String)">
+	<summary>
+ Create a new Member object.
+ </summary>
+	<param name="member_Id">Initial value of the Member_Id property.</param>
+</member><member name="P:AURORA.Member.Member_Id">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.Member.Member_Name">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.Member.Member_SurName">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.Member.Member_Sex">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.Member.Member_Address">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.Member.Member_Tel">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.Member.Member_IdentNumber">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.Member.Province_Id">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.Member.Province">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.Member.ProvinceReference">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.Member.OrderGold">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.Member.PledgeGold">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.Member.Sale">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="T:AURORA.Member">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="M:AURORA.OrderGold.CreateOrderGold(System.String)">
+	<summary>
+ Create a new OrderGold object.
+ </summary>
+	<param name="orderGold_Id">Initial value of the OrderGold_Id property.</param>
+</member><member name="P:AURORA.OrderGold.OrderGold_Id">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.OrderGold.OrderGold_Name">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.OrderGold.Date_OrderGold">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.OrderGold.LimitDate_OrderGold">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.OrderGold.Payment_Status">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.OrderGold.GoldWeight_Id">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.OrderGold.FormatGold_Id">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.OrderGold.CategoryGold_Id">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.OrderGold.PatternGold_Id">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.OrderGold.SizeGold_Id">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.OrderGold.PercentGold_Id">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.OrderGold.Member_Id">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.OrderGold.Payment_Id">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.OrderGold.Payment">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.OrderGold.Payment_Date">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.OrderGold.Employee_Id">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.OrderGold.CategoryGold">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.OrderGold.CategoryGoldReference">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.OrderGold.Employee">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.OrderGold.EmployeeReference">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.OrderGold.FormatGold">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.OrderGold.FormatGoldReference">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.OrderGold.GoldWeight">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.OrderGold.GoldWeightReference">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.OrderGold.Member">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.OrderGold.MemberReference">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.OrderGold.PatternGold">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.OrderGold.PatternGoldReference">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.OrderGold.Payment1">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.OrderGold.Payment1Reference">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.OrderGold.PercentGold">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.OrderGold.PercentGoldReference">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.OrderGold.SizeGold">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.OrderGold.SizeGoldReference">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="T:AURORA.OrderGold">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="M:AURORA.PatternGold.CreatePatternGold(System.String)">
+	<summary>
+ Create a new PatternGold object.
+ </summary>
+	<param name="patternGold_Id">Initial value of the PatternGold_Id property.</param>
+</member><member name="P:AURORA.PatternGold.PatternGold_Id">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.PatternGold.PatternGold_Name">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.PatternGold.GoldModel">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.PatternGold.OrderGold">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="T:AURORA.PatternGold">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="M:AURORA.PatternPledgeGold.CreatePatternPledgeGold(System.String)">
+	<summary>
+ Create a new PatternPledgeGold object.
+ </summary>
+	<param name="patternPledgeGold_Id">Initial value of the PatternPledgeGold_Id property.</param>
+</member><member name="P:AURORA.PatternPledgeGold.PatternPledgeGold_Id">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.PatternPledgeGold.PatternPledgeGold_Name">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.PatternPledgeGold.GoldPledge">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="T:AURORA.PatternPledgeGold">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="M:AURORA.Payment.CreatePayment(System.String)">
+	<summary>
+ Create a new Payment object.
+ </summary>
+	<param name="payment_Id">Initial value of the Payment_Id property.</param>
+</member><member name="P:AURORA.Payment.Payment_Id">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.Payment.Payment1">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.Payment.Payment_Date">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.Payment.PledgeGold_Id">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.Payment.OrderGold">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.Payment.PledgeGold">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.Payment.PledgeGoldReference">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.Payment.Sale">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="T:AURORA.Payment">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="M:AURORA.PercentGold.CreatePercentGold(System.String)">
+	<summary>
+ Create a new PercentGold object.
+ </summary>
+	<param name="percentGold_Id">Initial value of the PercentGold_Id property.</param>
+</member><member name="P:AURORA.PercentGold.PercentGold_Id">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.PercentGold.PercentGold1">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.PercentGold.GoldModel">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.PercentGold.OrderGold">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="T:AURORA.PercentGold">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="M:AURORA.PercentPledgeGold.CreatePercentPledgeGold(System.String)">
+	<summary>
+ Create a new PercentPledgeGold object.
+ </summary>
+	<param name="percentPledgeGold_Id">Initial value of the PercentPledgeGold_Id property.</param>
+</member><member name="P:AURORA.PercentPledgeGold.PercentPledgeGold_Id">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.PercentPledgeGold.PercentPledgeGold1">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.PercentPledgeGold.GoldPledge">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="T:AURORA.PercentPledgeGold">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="M:AURORA.Permis.CreatePermis(System.String)">
+	<summary>
+ Create a new Permis object.
+ </summary>
+	<param name="permis_Id">Initial value of the Permis_Id property.</param>
+</member><member name="P:AURORA.Permis.Permis_Id">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.Permis.Permis_Name">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.Permis.Employee">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="T:AURORA.Permis">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="M:AURORA.PledgeGold.CreatePledgeGold(System.String)">
+	<summary>
+ Create a new PledgeGold object.
+ </summary>
+	<param name="pledgeGold_Id">Initial value of the PledgeGold_Id property.</param>
+</member><member name="P:AURORA.PledgeGold.PledgeGold_Id">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.PledgeGold.Date_PledgeGold">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.PledgeGold.Staus_PledgeGold">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.PledgeGold.Payment_Status">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.PledgeGold.RedeemGold_Id">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.PledgeGold.Date_RedeemGold">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.PledgeGold.Member_Id">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.PledgeGold.GoldPledge_Id">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.PledgeGold.Employee_Id">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.PledgeGold.Employee">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.PledgeGold.EmployeeReference">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.PledgeGold.GoldPledge">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.PledgeGold.GoldPledgeReference">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.PledgeGold.Member">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.PledgeGold.MemberReference">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.PledgeGold.Payment">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="T:AURORA.PledgeGold">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="M:AURORA.Province.CreateProvince(System.String)">
+	<summary>
+ Create a new Province object.
+ </summary>
+	<param name="province_Id">Initial value of the Province_Id property.</param>
+</member><member name="P:AURORA.Province.Province_Id">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.Province.Province_Name">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.Province.Member">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="T:AURORA.Province">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="M:AURORA.Sale.CreateSale(System.String)">
+	<summary>
+ Create a new Sale object.
+ </summary>
+	<param name="sale_Id">Initial value of the Sale_Id property.</param>
+</member><member name="P:AURORA.Sale.Sale_Id">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.Sale.DateofSale">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.Sale.TimeofSale">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.Sale.Payment_Status">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.Sale.Employee_Id">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.Sale.Member_Id">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.Sale.Payment_Id">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.Sale.Payment">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.Sale.Payment_Date">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.Sale.DetailSale">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.Sale.DetailSaleReference">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.Sale.Employee">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.Sale.EmployeeReference">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.Sale.Member">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.Sale.MemberReference">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.Sale.Payment1">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.Sale.Payment1Reference">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="T:AURORA.Sale">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="M:AURORA.SizeGold.CreateSizeGold(System.String)">
+	<summary>
+ Create a new SizeGold object.
+ </summary>
+	<param name="sizeGold_Id">Initial value of the SizeGold_Id property.</param>
+</member><member name="P:AURORA.SizeGold.SizeGold_Id">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.SizeGold.SizeGold_Name">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.SizeGold.GoldModel">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.SizeGold.OrderGold">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="T:AURORA.SizeGold">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="M:AURORA.SizePledgeGold.CreateSizePledgeGold(System.String)">
+	<summary>
+ Create a new SizePledgeGold object.
+ </summary>
+	<param name="sizePledgeGold_Id">Initial value of the SizePledgeGold_Id property.</param>
+</member><member name="P:AURORA.SizePledgeGold.SizePledgeGold_Id">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.SizePledgeGold.SizePledgeGold_Name">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.SizePledgeGold.GoldPledge">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="T:AURORA.SizePledgeGold">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="M:AURORA.sysdiagrams.Createsysdiagrams(System.String,System.Int32,System.Int32)">
+	<summary>
+ Create a new sysdiagrams object.
+ </summary>
+	<param name="name">Initial value of the name property.</param>
+	<param name="principal_id">Initial value of the principal_id property.</param>
+	<param name="diagram_id">Initial value of the diagram_id property.</param>
+</member><member name="P:AURORA.sysdiagrams.name">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.sysdiagrams.principal_id">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.sysdiagrams.diagram_id">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.sysdiagrams.version">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.sysdiagrams.definition">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="T:AURORA.sysdiagrams">
+	<summary>
+ No Metadata Documentation available.
+ </summary>
+</member><member name="P:AURORA.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:AURORA.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:AURORA.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>

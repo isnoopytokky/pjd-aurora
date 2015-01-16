@@ -1,0 +1,2040 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="AURORAModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="AURORAModelStoreContainer">
+          <EntitySet Name="CategoryGold" EntityType="AURORAModel.Store.CategoryGold" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="CategoryPledgeGold" EntityType="AURORAModel.Store.CategoryPledgeGold" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="DetailSale" EntityType="AURORAModel.Store.DetailSale" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Employee" EntityType="AURORAModel.Store.Employee" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="FormatGold" EntityType="AURORAModel.Store.FormatGold" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="FormatPledgeGold" EntityType="AURORAModel.Store.FormatPledgeGold" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="GoldModel" EntityType="AURORAModel.Store.GoldModel" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="GoldPledge" EntityType="AURORAModel.Store.GoldPledge" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="GoldPledgeWeight" EntityType="AURORAModel.Store.GoldPledgeWeight" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="GoldWeight" EntityType="AURORAModel.Store.GoldWeight" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Member" EntityType="AURORAModel.Store.Member" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="OrderGold" EntityType="AURORAModel.Store.OrderGold" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="PatternGold" EntityType="AURORAModel.Store.PatternGold" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="PatternPledgeGold" EntityType="AURORAModel.Store.PatternPledgeGold" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Payment" EntityType="AURORAModel.Store.Payment" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="PercentGold" EntityType="AURORAModel.Store.PercentGold" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="PercentPledgeGold" EntityType="AURORAModel.Store.PercentPledgeGold" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Permis" EntityType="AURORAModel.Store.Permis" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="PledgeGold" EntityType="AURORAModel.Store.PledgeGold" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Province" EntityType="AURORAModel.Store.Province" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Sale" EntityType="AURORAModel.Store.Sale" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="SizeGold" EntityType="AURORAModel.Store.SizeGold" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="SizePledgeGold" EntityType="AURORAModel.Store.SizePledgeGold" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="sysdiagrams" EntityType="AURORAModel.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_DetailSale_GoldModel" Association="AURORAModel.Store.FK_DetailSale_GoldModel">
+            <End Role="GoldModel" EntitySet="GoldModel" />
+            <End Role="DetailSale" EntitySet="DetailSale" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Employee_Permis" Association="AURORAModel.Store.FK_Employee_Permis">
+            <End Role="Permis" EntitySet="Permis" />
+            <End Role="Employee" EntitySet="Employee" />
+          </AssociationSet>
+          <AssociationSet Name="FK_GoldModel_CategoryGold" Association="AURORAModel.Store.FK_GoldModel_CategoryGold">
+            <End Role="CategoryGold" EntitySet="CategoryGold" />
+            <End Role="GoldModel" EntitySet="GoldModel" />
+          </AssociationSet>
+          <AssociationSet Name="FK_GoldModel_FormatGold" Association="AURORAModel.Store.FK_GoldModel_FormatGold">
+            <End Role="FormatGold" EntitySet="FormatGold" />
+            <End Role="GoldModel" EntitySet="GoldModel" />
+          </AssociationSet>
+          <AssociationSet Name="FK_GoldModel_GoldWeight" Association="AURORAModel.Store.FK_GoldModel_GoldWeight">
+            <End Role="GoldWeight" EntitySet="GoldWeight" />
+            <End Role="GoldModel" EntitySet="GoldModel" />
+          </AssociationSet>
+          <AssociationSet Name="FK_GoldModel_PatternGold" Association="AURORAModel.Store.FK_GoldModel_PatternGold">
+            <End Role="PatternGold" EntitySet="PatternGold" />
+            <End Role="GoldModel" EntitySet="GoldModel" />
+          </AssociationSet>
+          <AssociationSet Name="FK_GoldModel_PercentGold" Association="AURORAModel.Store.FK_GoldModel_PercentGold">
+            <End Role="PercentGold" EntitySet="PercentGold" />
+            <End Role="GoldModel" EntitySet="GoldModel" />
+          </AssociationSet>
+          <AssociationSet Name="FK_GoldModel_SizeGold" Association="AURORAModel.Store.FK_GoldModel_SizeGold">
+            <End Role="SizeGold" EntitySet="SizeGold" />
+            <End Role="GoldModel" EntitySet="GoldModel" />
+          </AssociationSet>
+          <AssociationSet Name="FK_GoldPledge_CategoryPledgeGold" Association="AURORAModel.Store.FK_GoldPledge_CategoryPledgeGold">
+            <End Role="CategoryPledgeGold" EntitySet="CategoryPledgeGold" />
+            <End Role="GoldPledge" EntitySet="GoldPledge" />
+          </AssociationSet>
+          <AssociationSet Name="FK_GoldPledge_FormatPledgeGold" Association="AURORAModel.Store.FK_GoldPledge_FormatPledgeGold">
+            <End Role="FormatPledgeGold" EntitySet="FormatPledgeGold" />
+            <End Role="GoldPledge" EntitySet="GoldPledge" />
+          </AssociationSet>
+          <AssociationSet Name="FK_GoldPledge_GoldPledgeWeight" Association="AURORAModel.Store.FK_GoldPledge_GoldPledgeWeight">
+            <End Role="GoldPledgeWeight" EntitySet="GoldPledgeWeight" />
+            <End Role="GoldPledge" EntitySet="GoldPledge" />
+          </AssociationSet>
+          <AssociationSet Name="FK_GoldPledge_PatternPledgeGold" Association="AURORAModel.Store.FK_GoldPledge_PatternPledgeGold">
+            <End Role="PatternPledgeGold" EntitySet="PatternPledgeGold" />
+            <End Role="GoldPledge" EntitySet="GoldPledge" />
+          </AssociationSet>
+          <AssociationSet Name="FK_GoldPledge_PercentPledgeGold" Association="AURORAModel.Store.FK_GoldPledge_PercentPledgeGold">
+            <End Role="PercentPledgeGold" EntitySet="PercentPledgeGold" />
+            <End Role="GoldPledge" EntitySet="GoldPledge" />
+          </AssociationSet>
+          <AssociationSet Name="FK_GoldPledge_SizePledgeGold" Association="AURORAModel.Store.FK_GoldPledge_SizePledgeGold">
+            <End Role="SizePledgeGold" EntitySet="SizePledgeGold" />
+            <End Role="GoldPledge" EntitySet="GoldPledge" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Member_Province" Association="AURORAModel.Store.FK_Member_Province">
+            <End Role="Province" EntitySet="Province" />
+            <End Role="Member" EntitySet="Member" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OrderGold_CategoryGold" Association="AURORAModel.Store.FK_OrderGold_CategoryGold">
+            <End Role="CategoryGold" EntitySet="CategoryGold" />
+            <End Role="OrderGold" EntitySet="OrderGold" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OrderGold_Employee" Association="AURORAModel.Store.FK_OrderGold_Employee">
+            <End Role="Employee" EntitySet="Employee" />
+            <End Role="OrderGold" EntitySet="OrderGold" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OrderGold_FormatGold" Association="AURORAModel.Store.FK_OrderGold_FormatGold">
+            <End Role="FormatGold" EntitySet="FormatGold" />
+            <End Role="OrderGold" EntitySet="OrderGold" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OrderGold_GoldWeight" Association="AURORAModel.Store.FK_OrderGold_GoldWeight">
+            <End Role="GoldWeight" EntitySet="GoldWeight" />
+            <End Role="OrderGold" EntitySet="OrderGold" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OrderGold_Member" Association="AURORAModel.Store.FK_OrderGold_Member">
+            <End Role="Member" EntitySet="Member" />
+            <End Role="OrderGold" EntitySet="OrderGold" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OrderGold_PatternGold" Association="AURORAModel.Store.FK_OrderGold_PatternGold">
+            <End Role="PatternGold" EntitySet="PatternGold" />
+            <End Role="OrderGold" EntitySet="OrderGold" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OrderGold_Payment" Association="AURORAModel.Store.FK_OrderGold_Payment">
+            <End Role="Payment" EntitySet="Payment" />
+            <End Role="OrderGold" EntitySet="OrderGold" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OrderGold_PercentGold" Association="AURORAModel.Store.FK_OrderGold_PercentGold">
+            <End Role="PercentGold" EntitySet="PercentGold" />
+            <End Role="OrderGold" EntitySet="OrderGold" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OrderGold_SizeGold" Association="AURORAModel.Store.FK_OrderGold_SizeGold">
+            <End Role="SizeGold" EntitySet="SizeGold" />
+            <End Role="OrderGold" EntitySet="OrderGold" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Payment_PledgeGold" Association="AURORAModel.Store.FK_Payment_PledgeGold">
+            <End Role="PledgeGold" EntitySet="PledgeGold" />
+            <End Role="Payment" EntitySet="Payment" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PledgeGold_Employee" Association="AURORAModel.Store.FK_PledgeGold_Employee">
+            <End Role="Employee" EntitySet="Employee" />
+            <End Role="PledgeGold" EntitySet="PledgeGold" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PledgeGold_GoldPledge" Association="AURORAModel.Store.FK_PledgeGold_GoldPledge">
+            <End Role="GoldPledge" EntitySet="GoldPledge" />
+            <End Role="PledgeGold" EntitySet="PledgeGold" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PledgeGold_Member" Association="AURORAModel.Store.FK_PledgeGold_Member">
+            <End Role="Member" EntitySet="Member" />
+            <End Role="PledgeGold" EntitySet="PledgeGold" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Sale_DetailSale" Association="AURORAModel.Store.FK_Sale_DetailSale">
+            <End Role="DetailSale" EntitySet="DetailSale" />
+            <End Role="Sale" EntitySet="Sale" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Sale_Employee" Association="AURORAModel.Store.FK_Sale_Employee">
+            <End Role="Employee" EntitySet="Employee" />
+            <End Role="Sale" EntitySet="Sale" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Sale_Member" Association="AURORAModel.Store.FK_Sale_Member">
+            <End Role="Member" EntitySet="Member" />
+            <End Role="Sale" EntitySet="Sale" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Sale_Payment" Association="AURORAModel.Store.FK_Sale_Payment">
+            <End Role="Payment" EntitySet="Payment" />
+            <End Role="Sale" EntitySet="Sale" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="CategoryGold">
+          <Key>
+            <PropertyRef Name="CategoryGold_Id" />
+          </Key>
+          <Property Name="CategoryGold_Id" Type="char" Nullable="false" MaxLength="5" />
+          <Property Name="CategoryGold_Name" Type="char" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="CategoryPledgeGold">
+          <Key>
+            <PropertyRef Name="CategoryPledgeGold_Id" />
+          </Key>
+          <Property Name="CategoryPledgeGold_Id" Type="char" Nullable="false" MaxLength="5" />
+          <Property Name="CategoryPledgeGold_Name" Type="char" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="DetailSale">
+          <Key>
+            <PropertyRef Name="Sale_Id" />
+          </Key>
+          <Property Name="Sale_Id" Type="char" Nullable="false" MaxLength="4" />
+          <Property Name="Gold_Id" Type="char" MaxLength="3" />
+          <Property Name="Gold_Amount" Type="char" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="Employee">
+          <Key>
+            <PropertyRef Name="Employee_Id" />
+          </Key>
+          <Property Name="Employee_Id" Type="char" Nullable="false" MaxLength="3" />
+          <Property Name="Employee_Name" Type="char" MaxLength="20" />
+          <Property Name="Employee_SurName" Type="char" MaxLength="20" />
+          <Property Name="Ident_Number" Type="char" MaxLength="13" />
+          <Property Name="Employee_Sex" Type="char" MaxLength="5" />
+          <Property Name="Employee_Address" Type="char" MaxLength="50" />
+          <Property Name="UserName" Type="char" MaxLength="10" />
+          <Property Name="PassWord" Type="char" MaxLength="10" />
+          <Property Name="Permis_Id" Type="char" MaxLength="2" />
+        </EntityType>
+        <EntityType Name="FormatGold">
+          <Key>
+            <PropertyRef Name="FormatGold_Id" />
+          </Key>
+          <Property Name="FormatGold_Id" Type="char" Nullable="false" MaxLength="5" />
+          <Property Name="FormatGold_Name" Type="char" MaxLength="20" />
+          <Property Name="Prices_aretired_bundle" Type="char" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="FormatPledgeGold">
+          <Key>
+            <PropertyRef Name="FormatPledgeGold_Id" />
+          </Key>
+          <Property Name="FormatPledgeGold_Id" Type="char" Nullable="false" MaxLength="5" />
+          <Property Name="FormatPledgeGold_Name" Type="char" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="GoldModel">
+          <Key>
+            <PropertyRef Name="Gold_Id" />
+          </Key>
+          <Property Name="Gold_Id" Type="char" Nullable="false" MaxLength="3" />
+          <Property Name="Gold_Amount" Type="char" MaxLength="30" />
+          <Property Name="Total_Price" Type="char" MaxLength="10" />
+          <Property Name="Goldweight_Id" Type="char" MaxLength="5" />
+          <Property Name="FormatGold_Id" Type="char" MaxLength="5" />
+          <Property Name="CategoryGold_Id" Type="char" MaxLength="5" />
+          <Property Name="PatternGold_Id" Type="char" MaxLength="5" />
+          <Property Name="SizeGold_Id" Type="char" MaxLength="5" />
+          <Property Name="PercentGold_Id" Type="char" MaxLength="5" />
+        </EntityType>
+        <EntityType Name="GoldPledge">
+          <Key>
+            <PropertyRef Name="GoldPledge_Id" />
+          </Key>
+          <Property Name="GoldPledge_Id" Type="char" Nullable="false" MaxLength="3" />
+          <Property Name="Price_GoldPledge" Type="char" MaxLength="10" />
+          <Property Name="FormatPledgeGold_Id" Type="char" MaxLength="5" />
+          <Property Name="CategoryPledgeGold_Id" Type="char" MaxLength="5" />
+          <Property Name="SizePledgeGold_Id" Type="char" MaxLength="5" />
+          <Property Name="PatternPledgeGold_Id" Type="char" MaxLength="5" />
+          <Property Name="GoldPledgeWeight_Id" Type="char" MaxLength="5" />
+          <Property Name="PercentPledgeGold_Id" Type="char" MaxLength="5" />
+        </EntityType>
+        <EntityType Name="GoldPledgeWeight">
+          <Key>
+            <PropertyRef Name="GoldPledgeWeight_Id" />
+          </Key>
+          <Property Name="GoldPledgeWeight_Id" Type="char" Nullable="false" MaxLength="5" />
+          <Property Name="GoldPledgeWeight_Name" Type="char" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="GoldWeight">
+          <Key>
+            <PropertyRef Name="GoldWeight_Id" />
+          </Key>
+          <Property Name="GoldWeight_Id" Type="char" Nullable="false" MaxLength="5" />
+          <Property Name="GoldWeight_Name" Type="char" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="Member">
+          <Key>
+            <PropertyRef Name="Member_Id" />
+          </Key>
+          <Property Name="Member_Id" Type="char" Nullable="false" MaxLength="5" />
+          <Property Name="Member_Name" Type="char" MaxLength="20" />
+          <Property Name="Member_SurName" Type="char" MaxLength="20" />
+          <Property Name="Member_Sex" Type="char" MaxLength="5" />
+          <Property Name="Member_Address" Type="char" MaxLength="50" />
+          <Property Name="Member_Tel" Type="char" MaxLength="10" />
+          <Property Name="Member_IdentNumber" Type="char" MaxLength="13" />
+          <Property Name="Province_Id" Type="char" MaxLength="5" />
+        </EntityType>
+        <EntityType Name="OrderGold">
+          <Key>
+            <PropertyRef Name="OrderGold_Id" />
+          </Key>
+          <Property Name="OrderGold_Id" Type="char" Nullable="false" MaxLength="4" />
+          <Property Name="OrderGold_Name" Type="char" MaxLength="20" />
+          <Property Name="Date_OrderGold" Type="date" />
+          <Property Name="LimitDate_OrderGold" Type="date" />
+          <Property Name="Payment_Status" Type="char" MaxLength="30" />
+          <Property Name="GoldWeight_Id" Type="char" MaxLength="5" />
+          <Property Name="FormatGold_Id" Type="char" MaxLength="5" />
+          <Property Name="CategoryGold_Id" Type="char" MaxLength="5" />
+          <Property Name="PatternGold_Id" Type="char" MaxLength="5" />
+          <Property Name="SizeGold_Id" Type="char" MaxLength="5" />
+          <Property Name="PercentGold_Id" Type="char" MaxLength="5" />
+          <Property Name="Member_Id" Type="char" MaxLength="5" />
+          <Property Name="Payment_Id" Type="char" MaxLength="6" />
+          <Property Name="Payment" Type="char" MaxLength="20" />
+          <Property Name="Payment_Date" Type="char" MaxLength="30" />
+          <Property Name="Employee_Id" Type="char" MaxLength="3" />
+        </EntityType>
+        <EntityType Name="PatternGold">
+          <Key>
+            <PropertyRef Name="PatternGold_Id" />
+          </Key>
+          <Property Name="PatternGold_Id" Type="char" Nullable="false" MaxLength="5" />
+          <Property Name="PatternGold_Name" Type="char" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="PatternPledgeGold">
+          <Key>
+            <PropertyRef Name="PatternPledgeGold_Id" />
+          </Key>
+          <Property Name="PatternPledgeGold_Id" Type="char" Nullable="false" MaxLength="5" />
+          <Property Name="PatternPledgeGold_Name" Type="char" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="Payment">
+          <Key>
+            <PropertyRef Name="Payment_Id" />
+          </Key>
+          <Property Name="Payment_Id" Type="char" Nullable="false" MaxLength="6" />
+          <Property Name="Payment" Type="char" MaxLength="20" />
+          <Property Name="Payment_Date" Type="date" />
+          <Property Name="PledgeGold_Id" Type="char" MaxLength="3" />
+        </EntityType>
+        <EntityType Name="PercentGold">
+          <Key>
+            <PropertyRef Name="PercentGold_Id" />
+          </Key>
+          <Property Name="PercentGold_Id" Type="char" Nullable="false" MaxLength="5" />
+          <Property Name="PercentGold" Type="char" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="PercentPledgeGold">
+          <Key>
+            <PropertyRef Name="PercentPledgeGold_Id" />
+          </Key>
+          <Property Name="PercentPledgeGold_Id" Type="char" Nullable="false" MaxLength="5" />
+          <Property Name="PercentPledgeGold" Type="char" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="Permis">
+          <Key>
+            <PropertyRef Name="Permis_Id" />
+          </Key>
+          <Property Name="Permis_Id" Type="char" Nullable="false" MaxLength="2" />
+          <Property Name="Permis_Name" Type="char" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="PledgeGold">
+          <Key>
+            <PropertyRef Name="PledgeGold_Id" />
+          </Key>
+          <Property Name="PledgeGold_Id" Type="char" Nullable="false" MaxLength="3" />
+          <Property Name="Date_PledgeGold" Type="date" />
+          <Property Name="Staus_PledgeGold" Type="char" MaxLength="30" />
+          <Property Name="Payment_Status" Type="char" MaxLength="30" />
+          <Property Name="RedeemGold_Id" Type="char" MaxLength="5" />
+          <Property Name="Date_RedeemGold" Type="date" />
+          <Property Name="Member_Id" Type="char" MaxLength="5" />
+          <Property Name="GoldPledge_Id" Type="char" MaxLength="3" />
+          <Property Name="Employee_Id" Type="char" MaxLength="3" />
+        </EntityType>
+        <EntityType Name="Province">
+          <Key>
+            <PropertyRef Name="Province_Id" />
+          </Key>
+          <Property Name="Province_Id" Type="char" Nullable="false" MaxLength="5" />
+          <Property Name="Province_Name" Type="char" MaxLength="15" />
+        </EntityType>
+        <EntityType Name="Sale">
+          <Key>
+            <PropertyRef Name="Sale_Id" />
+          </Key>
+          <Property Name="Sale_Id" Type="char" Nullable="false" MaxLength="4" />
+          <Property Name="DateofSale" Type="date" />
+          <Property Name="TimeofSale" Type="time" />
+          <Property Name="Payment_Status" Type="char" MaxLength="30" />
+          <Property Name="Employee_Id" Type="char" MaxLength="3" />
+          <Property Name="Member_Id" Type="char" MaxLength="5" />
+          <Property Name="Payment_Id" Type="char" MaxLength="6" />
+          <Property Name="Payment" Type="char" MaxLength="20" />
+          <Property Name="Payment_Date" Type="date" />
+        </EntityType>
+        <EntityType Name="SizeGold">
+          <Key>
+            <PropertyRef Name="SizeGold_Id" />
+          </Key>
+          <Property Name="SizeGold_Id" Type="char" Nullable="false" MaxLength="5" />
+          <Property Name="SizeGold_Name" Type="char" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="SizePledgeGold">
+          <Key>
+            <PropertyRef Name="SizePledgeGold_Id" />
+          </Key>
+          <Property Name="SizePledgeGold_Id" Type="char" Nullable="false" MaxLength="5" />
+          <Property Name="SizePledgeGold_Name" Type="char" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <Association Name="FK_DetailSale_GoldModel">
+          <End Role="GoldModel" Type="AURORAModel.Store.GoldModel" Multiplicity="0..1" />
+          <End Role="DetailSale" Type="AURORAModel.Store.DetailSale" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GoldModel">
+              <PropertyRef Name="Gold_Id" />
+            </Principal>
+            <Dependent Role="DetailSale">
+              <PropertyRef Name="Gold_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Employee_Permis">
+          <End Role="Permis" Type="AURORAModel.Store.Permis" Multiplicity="0..1" />
+          <End Role="Employee" Type="AURORAModel.Store.Employee" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Permis">
+              <PropertyRef Name="Permis_Id" />
+            </Principal>
+            <Dependent Role="Employee">
+              <PropertyRef Name="Permis_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_GoldModel_CategoryGold">
+          <End Role="CategoryGold" Type="AURORAModel.Store.CategoryGold" Multiplicity="0..1" />
+          <End Role="GoldModel" Type="AURORAModel.Store.GoldModel" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CategoryGold">
+              <PropertyRef Name="CategoryGold_Id" />
+            </Principal>
+            <Dependent Role="GoldModel">
+              <PropertyRef Name="CategoryGold_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_GoldModel_FormatGold">
+          <End Role="FormatGold" Type="AURORAModel.Store.FormatGold" Multiplicity="0..1" />
+          <End Role="GoldModel" Type="AURORAModel.Store.GoldModel" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="FormatGold">
+              <PropertyRef Name="FormatGold_Id" />
+            </Principal>
+            <Dependent Role="GoldModel">
+              <PropertyRef Name="FormatGold_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_GoldModel_GoldWeight">
+          <End Role="GoldWeight" Type="AURORAModel.Store.GoldWeight" Multiplicity="0..1" />
+          <End Role="GoldModel" Type="AURORAModel.Store.GoldModel" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GoldWeight">
+              <PropertyRef Name="GoldWeight_Id" />
+            </Principal>
+            <Dependent Role="GoldModel">
+              <PropertyRef Name="Goldweight_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_GoldModel_PatternGold">
+          <End Role="PatternGold" Type="AURORAModel.Store.PatternGold" Multiplicity="0..1" />
+          <End Role="GoldModel" Type="AURORAModel.Store.GoldModel" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PatternGold">
+              <PropertyRef Name="PatternGold_Id" />
+            </Principal>
+            <Dependent Role="GoldModel">
+              <PropertyRef Name="PatternGold_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_GoldModel_PercentGold">
+          <End Role="PercentGold" Type="AURORAModel.Store.PercentGold" Multiplicity="0..1" />
+          <End Role="GoldModel" Type="AURORAModel.Store.GoldModel" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PercentGold">
+              <PropertyRef Name="PercentGold_Id" />
+            </Principal>
+            <Dependent Role="GoldModel">
+              <PropertyRef Name="PercentGold_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_GoldModel_SizeGold">
+          <End Role="SizeGold" Type="AURORAModel.Store.SizeGold" Multiplicity="0..1" />
+          <End Role="GoldModel" Type="AURORAModel.Store.GoldModel" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SizeGold">
+              <PropertyRef Name="SizeGold_Id" />
+            </Principal>
+            <Dependent Role="GoldModel">
+              <PropertyRef Name="SizeGold_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_GoldPledge_CategoryPledgeGold">
+          <End Role="CategoryPledgeGold" Type="AURORAModel.Store.CategoryPledgeGold" Multiplicity="0..1" />
+          <End Role="GoldPledge" Type="AURORAModel.Store.GoldPledge" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CategoryPledgeGold">
+              <PropertyRef Name="CategoryPledgeGold_Id" />
+            </Principal>
+            <Dependent Role="GoldPledge">
+              <PropertyRef Name="CategoryPledgeGold_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_GoldPledge_FormatPledgeGold">
+          <End Role="FormatPledgeGold" Type="AURORAModel.Store.FormatPledgeGold" Multiplicity="0..1" />
+          <End Role="GoldPledge" Type="AURORAModel.Store.GoldPledge" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="FormatPledgeGold">
+              <PropertyRef Name="FormatPledgeGold_Id" />
+            </Principal>
+            <Dependent Role="GoldPledge">
+              <PropertyRef Name="FormatPledgeGold_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_GoldPledge_GoldPledgeWeight">
+          <End Role="GoldPledgeWeight" Type="AURORAModel.Store.GoldPledgeWeight" Multiplicity="0..1" />
+          <End Role="GoldPledge" Type="AURORAModel.Store.GoldPledge" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GoldPledgeWeight">
+              <PropertyRef Name="GoldPledgeWeight_Id" />
+            </Principal>
+            <Dependent Role="GoldPledge">
+              <PropertyRef Name="GoldPledgeWeight_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_GoldPledge_PatternPledgeGold">
+          <End Role="PatternPledgeGold" Type="AURORAModel.Store.PatternPledgeGold" Multiplicity="0..1" />
+          <End Role="GoldPledge" Type="AURORAModel.Store.GoldPledge" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PatternPledgeGold">
+              <PropertyRef Name="PatternPledgeGold_Id" />
+            </Principal>
+            <Dependent Role="GoldPledge">
+              <PropertyRef Name="PatternPledgeGold_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_GoldPledge_PercentPledgeGold">
+          <End Role="PercentPledgeGold" Type="AURORAModel.Store.PercentPledgeGold" Multiplicity="0..1" />
+          <End Role="GoldPledge" Type="AURORAModel.Store.GoldPledge" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PercentPledgeGold">
+              <PropertyRef Name="PercentPledgeGold_Id" />
+            </Principal>
+            <Dependent Role="GoldPledge">
+              <PropertyRef Name="PercentPledgeGold_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_GoldPledge_SizePledgeGold">
+          <End Role="SizePledgeGold" Type="AURORAModel.Store.SizePledgeGold" Multiplicity="0..1" />
+          <End Role="GoldPledge" Type="AURORAModel.Store.GoldPledge" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SizePledgeGold">
+              <PropertyRef Name="SizePledgeGold_Id" />
+            </Principal>
+            <Dependent Role="GoldPledge">
+              <PropertyRef Name="SizePledgeGold_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Member_Province">
+          <End Role="Province" Type="AURORAModel.Store.Province" Multiplicity="0..1" />
+          <End Role="Member" Type="AURORAModel.Store.Member" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Province">
+              <PropertyRef Name="Province_Id" />
+            </Principal>
+            <Dependent Role="Member">
+              <PropertyRef Name="Province_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OrderGold_CategoryGold">
+          <End Role="CategoryGold" Type="AURORAModel.Store.CategoryGold" Multiplicity="0..1" />
+          <End Role="OrderGold" Type="AURORAModel.Store.OrderGold" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CategoryGold">
+              <PropertyRef Name="CategoryGold_Id" />
+            </Principal>
+            <Dependent Role="OrderGold">
+              <PropertyRef Name="CategoryGold_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OrderGold_Employee">
+          <End Role="Employee" Type="AURORAModel.Store.Employee" Multiplicity="0..1" />
+          <End Role="OrderGold" Type="AURORAModel.Store.OrderGold" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="Employee_Id" />
+            </Principal>
+            <Dependent Role="OrderGold">
+              <PropertyRef Name="Employee_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OrderGold_FormatGold">
+          <End Role="FormatGold" Type="AURORAModel.Store.FormatGold" Multiplicity="0..1" />
+          <End Role="OrderGold" Type="AURORAModel.Store.OrderGold" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="FormatGold">
+              <PropertyRef Name="FormatGold_Id" />
+            </Principal>
+            <Dependent Role="OrderGold">
+              <PropertyRef Name="FormatGold_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OrderGold_GoldWeight">
+          <End Role="GoldWeight" Type="AURORAModel.Store.GoldWeight" Multiplicity="0..1" />
+          <End Role="OrderGold" Type="AURORAModel.Store.OrderGold" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GoldWeight">
+              <PropertyRef Name="GoldWeight_Id" />
+            </Principal>
+            <Dependent Role="OrderGold">
+              <PropertyRef Name="GoldWeight_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OrderGold_Member">
+          <End Role="Member" Type="AURORAModel.Store.Member" Multiplicity="0..1" />
+          <End Role="OrderGold" Type="AURORAModel.Store.OrderGold" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Member">
+              <PropertyRef Name="Member_Id" />
+            </Principal>
+            <Dependent Role="OrderGold">
+              <PropertyRef Name="Member_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OrderGold_PatternGold">
+          <End Role="PatternGold" Type="AURORAModel.Store.PatternGold" Multiplicity="0..1" />
+          <End Role="OrderGold" Type="AURORAModel.Store.OrderGold" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PatternGold">
+              <PropertyRef Name="PatternGold_Id" />
+            </Principal>
+            <Dependent Role="OrderGold">
+              <PropertyRef Name="PatternGold_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OrderGold_Payment">
+          <End Role="Payment" Type="AURORAModel.Store.Payment" Multiplicity="0..1" />
+          <End Role="OrderGold" Type="AURORAModel.Store.OrderGold" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Payment">
+              <PropertyRef Name="Payment_Id" />
+            </Principal>
+            <Dependent Role="OrderGold">
+              <PropertyRef Name="Payment_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OrderGold_PercentGold">
+          <End Role="PercentGold" Type="AURORAModel.Store.PercentGold" Multiplicity="0..1" />
+          <End Role="OrderGold" Type="AURORAModel.Store.OrderGold" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PercentGold">
+              <PropertyRef Name="PercentGold_Id" />
+            </Principal>
+            <Dependent Role="OrderGold">
+              <PropertyRef Name="PercentGold_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OrderGold_SizeGold">
+          <End Role="SizeGold" Type="AURORAModel.Store.SizeGold" Multiplicity="0..1" />
+          <End Role="OrderGold" Type="AURORAModel.Store.OrderGold" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SizeGold">
+              <PropertyRef Name="SizeGold_Id" />
+            </Principal>
+            <Dependent Role="OrderGold">
+              <PropertyRef Name="SizeGold_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Payment_PledgeGold">
+          <End Role="PledgeGold" Type="AURORAModel.Store.PledgeGold" Multiplicity="0..1" />
+          <End Role="Payment" Type="AURORAModel.Store.Payment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PledgeGold">
+              <PropertyRef Name="PledgeGold_Id" />
+            </Principal>
+            <Dependent Role="Payment">
+              <PropertyRef Name="PledgeGold_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PledgeGold_Employee">
+          <End Role="Employee" Type="AURORAModel.Store.Employee" Multiplicity="0..1" />
+          <End Role="PledgeGold" Type="AURORAModel.Store.PledgeGold" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="Employee_Id" />
+            </Principal>
+            <Dependent Role="PledgeGold">
+              <PropertyRef Name="Employee_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PledgeGold_GoldPledge">
+          <End Role="GoldPledge" Type="AURORAModel.Store.GoldPledge" Multiplicity="0..1" />
+          <End Role="PledgeGold" Type="AURORAModel.Store.PledgeGold" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GoldPledge">
+              <PropertyRef Name="GoldPledge_Id" />
+            </Principal>
+            <Dependent Role="PledgeGold">
+              <PropertyRef Name="GoldPledge_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PledgeGold_Member">
+          <End Role="Member" Type="AURORAModel.Store.Member" Multiplicity="0..1" />
+          <End Role="PledgeGold" Type="AURORAModel.Store.PledgeGold" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Member">
+              <PropertyRef Name="Member_Id" />
+            </Principal>
+            <Dependent Role="PledgeGold">
+              <PropertyRef Name="Member_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Sale_DetailSale">
+          <End Role="DetailSale" Type="AURORAModel.Store.DetailSale" Multiplicity="1" />
+          <End Role="Sale" Type="AURORAModel.Store.Sale" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="DetailSale">
+              <PropertyRef Name="Sale_Id" />
+            </Principal>
+            <Dependent Role="Sale">
+              <PropertyRef Name="Sale_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Sale_Employee">
+          <End Role="Employee" Type="AURORAModel.Store.Employee" Multiplicity="0..1" />
+          <End Role="Sale" Type="AURORAModel.Store.Sale" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="Employee_Id" />
+            </Principal>
+            <Dependent Role="Sale">
+              <PropertyRef Name="Employee_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Sale_Member">
+          <End Role="Member" Type="AURORAModel.Store.Member" Multiplicity="0..1" />
+          <End Role="Sale" Type="AURORAModel.Store.Sale" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Member">
+              <PropertyRef Name="Member_Id" />
+            </Principal>
+            <Dependent Role="Sale">
+              <PropertyRef Name="Member_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Sale_Payment">
+          <End Role="Payment" Type="AURORAModel.Store.Payment" Multiplicity="0..1" />
+          <End Role="Sale" Type="AURORAModel.Store.Sale" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Payment">
+              <PropertyRef Name="Payment_Id" />
+            </Principal>
+            <Dependent Role="Sale">
+              <PropertyRef Name="Payment_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="AURORAModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="AURORAEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="CategoryGold" EntityType="AURORAModel.CategoryGold" />
+          <EntitySet Name="CategoryPledgeGold" EntityType="AURORAModel.CategoryPledgeGold" />
+          <EntitySet Name="DetailSale" EntityType="AURORAModel.DetailSale" />
+          <EntitySet Name="Employee" EntityType="AURORAModel.Employee" />
+          <EntitySet Name="FormatGold" EntityType="AURORAModel.FormatGold" />
+          <EntitySet Name="FormatPledgeGold" EntityType="AURORAModel.FormatPledgeGold" />
+          <EntitySet Name="GoldModel" EntityType="AURORAModel.GoldModel" />
+          <EntitySet Name="GoldPledge" EntityType="AURORAModel.GoldPledge" />
+          <EntitySet Name="GoldPledgeWeight" EntityType="AURORAModel.GoldPledgeWeight" />
+          <EntitySet Name="GoldWeight" EntityType="AURORAModel.GoldWeight" />
+          <EntitySet Name="Member" EntityType="AURORAModel.Member" />
+          <EntitySet Name="OrderGold" EntityType="AURORAModel.OrderGold" />
+          <EntitySet Name="PatternGold" EntityType="AURORAModel.PatternGold" />
+          <EntitySet Name="PatternPledgeGold" EntityType="AURORAModel.PatternPledgeGold" />
+          <EntitySet Name="Payment" EntityType="AURORAModel.Payment" />
+          <EntitySet Name="PercentGold" EntityType="AURORAModel.PercentGold" />
+          <EntitySet Name="PercentPledgeGold" EntityType="AURORAModel.PercentPledgeGold" />
+          <EntitySet Name="Permis" EntityType="AURORAModel.Permis" />
+          <EntitySet Name="PledgeGold" EntityType="AURORAModel.PledgeGold" />
+          <EntitySet Name="Province" EntityType="AURORAModel.Province" />
+          <EntitySet Name="Sale" EntityType="AURORAModel.Sale" />
+          <EntitySet Name="SizeGold" EntityType="AURORAModel.SizeGold" />
+          <EntitySet Name="SizePledgeGold" EntityType="AURORAModel.SizePledgeGold" />
+          <EntitySet Name="sysdiagrams" EntityType="AURORAModel.sysdiagrams" />
+          <AssociationSet Name="FK_GoldModel_CategoryGold" Association="AURORAModel.FK_GoldModel_CategoryGold">
+            <End Role="CategoryGold" EntitySet="CategoryGold" />
+            <End Role="GoldModel" EntitySet="GoldModel" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OrderGold_CategoryGold" Association="AURORAModel.FK_OrderGold_CategoryGold">
+            <End Role="CategoryGold" EntitySet="CategoryGold" />
+            <End Role="OrderGold" EntitySet="OrderGold" />
+          </AssociationSet>
+          <AssociationSet Name="FK_GoldPledge_CategoryPledgeGold" Association="AURORAModel.FK_GoldPledge_CategoryPledgeGold">
+            <End Role="CategoryPledgeGold" EntitySet="CategoryPledgeGold" />
+            <End Role="GoldPledge" EntitySet="GoldPledge" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DetailSale_GoldModel" Association="AURORAModel.FK_DetailSale_GoldModel">
+            <End Role="GoldModel" EntitySet="GoldModel" />
+            <End Role="DetailSale" EntitySet="DetailSale" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Sale_DetailSale" Association="AURORAModel.FK_Sale_DetailSale">
+            <End Role="DetailSale" EntitySet="DetailSale" />
+            <End Role="Sale" EntitySet="Sale" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Employee_Permis" Association="AURORAModel.FK_Employee_Permis">
+            <End Role="Permis" EntitySet="Permis" />
+            <End Role="Employee" EntitySet="Employee" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OrderGold_Employee" Association="AURORAModel.FK_OrderGold_Employee">
+            <End Role="Employee" EntitySet="Employee" />
+            <End Role="OrderGold" EntitySet="OrderGold" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PledgeGold_Employee" Association="AURORAModel.FK_PledgeGold_Employee">
+            <End Role="Employee" EntitySet="Employee" />
+            <End Role="PledgeGold" EntitySet="PledgeGold" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Sale_Employee" Association="AURORAModel.FK_Sale_Employee">
+            <End Role="Employee" EntitySet="Employee" />
+            <End Role="Sale" EntitySet="Sale" />
+          </AssociationSet>
+          <AssociationSet Name="FK_GoldModel_FormatGold" Association="AURORAModel.FK_GoldModel_FormatGold">
+            <End Role="FormatGold" EntitySet="FormatGold" />
+            <End Role="GoldModel" EntitySet="GoldModel" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OrderGold_FormatGold" Association="AURORAModel.FK_OrderGold_FormatGold">
+            <End Role="FormatGold" EntitySet="FormatGold" />
+            <End Role="OrderGold" EntitySet="OrderGold" />
+          </AssociationSet>
+          <AssociationSet Name="FK_GoldPledge_FormatPledgeGold" Association="AURORAModel.FK_GoldPledge_FormatPledgeGold">
+            <End Role="FormatPledgeGold" EntitySet="FormatPledgeGold" />
+            <End Role="GoldPledge" EntitySet="GoldPledge" />
+          </AssociationSet>
+          <AssociationSet Name="FK_GoldModel_GoldWeight" Association="AURORAModel.FK_GoldModel_GoldWeight">
+            <End Role="GoldWeight" EntitySet="GoldWeight" />
+            <End Role="GoldModel" EntitySet="GoldModel" />
+          </AssociationSet>
+          <AssociationSet Name="FK_GoldModel_PatternGold" Association="AURORAModel.FK_GoldModel_PatternGold">
+            <End Role="PatternGold" EntitySet="PatternGold" />
+            <End Role="GoldModel" EntitySet="GoldModel" />
+          </AssociationSet>
+          <AssociationSet Name="FK_GoldModel_PercentGold" Association="AURORAModel.FK_GoldModel_PercentGold">
+            <End Role="PercentGold" EntitySet="PercentGold" />
+            <End Role="GoldModel" EntitySet="GoldModel" />
+          </AssociationSet>
+          <AssociationSet Name="FK_GoldModel_SizeGold" Association="AURORAModel.FK_GoldModel_SizeGold">
+            <End Role="SizeGold" EntitySet="SizeGold" />
+            <End Role="GoldModel" EntitySet="GoldModel" />
+          </AssociationSet>
+          <AssociationSet Name="FK_GoldPledge_GoldPledgeWeight" Association="AURORAModel.FK_GoldPledge_GoldPledgeWeight">
+            <End Role="GoldPledgeWeight" EntitySet="GoldPledgeWeight" />
+            <End Role="GoldPledge" EntitySet="GoldPledge" />
+          </AssociationSet>
+          <AssociationSet Name="FK_GoldPledge_PatternPledgeGold" Association="AURORAModel.FK_GoldPledge_PatternPledgeGold">
+            <End Role="PatternPledgeGold" EntitySet="PatternPledgeGold" />
+            <End Role="GoldPledge" EntitySet="GoldPledge" />
+          </AssociationSet>
+          <AssociationSet Name="FK_GoldPledge_PercentPledgeGold" Association="AURORAModel.FK_GoldPledge_PercentPledgeGold">
+            <End Role="PercentPledgeGold" EntitySet="PercentPledgeGold" />
+            <End Role="GoldPledge" EntitySet="GoldPledge" />
+          </AssociationSet>
+          <AssociationSet Name="FK_GoldPledge_SizePledgeGold" Association="AURORAModel.FK_GoldPledge_SizePledgeGold">
+            <End Role="SizePledgeGold" EntitySet="SizePledgeGold" />
+            <End Role="GoldPledge" EntitySet="GoldPledge" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PledgeGold_GoldPledge" Association="AURORAModel.FK_PledgeGold_GoldPledge">
+            <End Role="GoldPledge" EntitySet="GoldPledge" />
+            <End Role="PledgeGold" EntitySet="PledgeGold" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OrderGold_GoldWeight" Association="AURORAModel.FK_OrderGold_GoldWeight">
+            <End Role="GoldWeight" EntitySet="GoldWeight" />
+            <End Role="OrderGold" EntitySet="OrderGold" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Member_Province" Association="AURORAModel.FK_Member_Province">
+            <End Role="Province" EntitySet="Province" />
+            <End Role="Member" EntitySet="Member" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OrderGold_Member" Association="AURORAModel.FK_OrderGold_Member">
+            <End Role="Member" EntitySet="Member" />
+            <End Role="OrderGold" EntitySet="OrderGold" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PledgeGold_Member" Association="AURORAModel.FK_PledgeGold_Member">
+            <End Role="Member" EntitySet="Member" />
+            <End Role="PledgeGold" EntitySet="PledgeGold" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Sale_Member" Association="AURORAModel.FK_Sale_Member">
+            <End Role="Member" EntitySet="Member" />
+            <End Role="Sale" EntitySet="Sale" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OrderGold_PatternGold" Association="AURORAModel.FK_OrderGold_PatternGold">
+            <End Role="PatternGold" EntitySet="PatternGold" />
+            <End Role="OrderGold" EntitySet="OrderGold" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OrderGold_Payment" Association="AURORAModel.FK_OrderGold_Payment">
+            <End Role="Payment" EntitySet="Payment" />
+            <End Role="OrderGold" EntitySet="OrderGold" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OrderGold_PercentGold" Association="AURORAModel.FK_OrderGold_PercentGold">
+            <End Role="PercentGold" EntitySet="PercentGold" />
+            <End Role="OrderGold" EntitySet="OrderGold" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OrderGold_SizeGold" Association="AURORAModel.FK_OrderGold_SizeGold">
+            <End Role="SizeGold" EntitySet="SizeGold" />
+            <End Role="OrderGold" EntitySet="OrderGold" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Payment_PledgeGold" Association="AURORAModel.FK_Payment_PledgeGold">
+            <End Role="PledgeGold" EntitySet="PledgeGold" />
+            <End Role="Payment" EntitySet="Payment" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Sale_Payment" Association="AURORAModel.FK_Sale_Payment">
+            <End Role="Payment" EntitySet="Payment" />
+            <End Role="Sale" EntitySet="Sale" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="CategoryGold">
+          <Key>
+            <PropertyRef Name="CategoryGold_Id" />
+          </Key>
+          <Property Name="CategoryGold_Id" Type="String" Nullable="false" MaxLength="5" Unicode="false" FixedLength="true" />
+          <Property Name="CategoryGold_Name" Type="String" MaxLength="20" Unicode="false" FixedLength="true" />
+          <NavigationProperty Name="GoldModel" Relationship="AURORAModel.FK_GoldModel_CategoryGold" FromRole="CategoryGold" ToRole="GoldModel" />
+          <NavigationProperty Name="OrderGold" Relationship="AURORAModel.FK_OrderGold_CategoryGold" FromRole="CategoryGold" ToRole="OrderGold" />
+        </EntityType>
+        <EntityType Name="CategoryPledgeGold">
+          <Key>
+            <PropertyRef Name="CategoryPledgeGold_Id" />
+          </Key>
+          <Property Name="CategoryPledgeGold_Id" Type="String" Nullable="false" MaxLength="5" Unicode="false" FixedLength="true" />
+          <Property Name="CategoryPledgeGold_Name" Type="String" MaxLength="20" Unicode="false" FixedLength="true" />
+          <NavigationProperty Name="GoldPledge" Relationship="AURORAModel.FK_GoldPledge_CategoryPledgeGold" FromRole="CategoryPledgeGold" ToRole="GoldPledge" />
+        </EntityType>
+        <EntityType Name="DetailSale">
+          <Key>
+            <PropertyRef Name="Sale_Id" />
+          </Key>
+          <Property Name="Sale_Id" Type="String" Nullable="false" MaxLength="4" Unicode="false" FixedLength="true" />
+          <Property Name="Gold_Id" Type="String" MaxLength="3" Unicode="false" FixedLength="true" />
+          <Property Name="Gold_Amount" Type="String" MaxLength="10" Unicode="false" FixedLength="true" />
+          <NavigationProperty Name="GoldModel" Relationship="AURORAModel.FK_DetailSale_GoldModel" FromRole="DetailSale" ToRole="GoldModel" />
+          <NavigationProperty Name="Sale" Relationship="AURORAModel.FK_Sale_DetailSale" FromRole="DetailSale" ToRole="Sale" />
+        </EntityType>
+        <EntityType Name="Employee">
+          <Key>
+            <PropertyRef Name="Employee_Id" />
+          </Key>
+          <Property Name="Employee_Id" Type="String" Nullable="false" MaxLength="3" Unicode="false" FixedLength="true" />
+          <Property Name="Employee_Name" Type="String" MaxLength="20" Unicode="false" FixedLength="true" />
+          <Property Name="Employee_SurName" Type="String" MaxLength="20" Unicode="false" FixedLength="true" />
+          <Property Name="Ident_Number" Type="String" MaxLength="13" Unicode="false" FixedLength="true" />
+          <Property Name="Employee_Sex" Type="String" MaxLength="5" Unicode="false" FixedLength="true" />
+          <Property Name="Employee_Address" Type="String" MaxLength="50" Unicode="false" FixedLength="true" />
+          <Property Name="UserName" Type="String" MaxLength="10" Unicode="false" FixedLength="true" />
+          <Property Name="PassWord" Type="String" MaxLength="10" Unicode="false" FixedLength="true" />
+          <Property Name="Permis_Id" Type="String" MaxLength="2" Unicode="false" FixedLength="true" />
+          <NavigationProperty Name="Permis" Relationship="AURORAModel.FK_Employee_Permis" FromRole="Employee" ToRole="Permis" />
+          <NavigationProperty Name="OrderGold" Relationship="AURORAModel.FK_OrderGold_Employee" FromRole="Employee" ToRole="OrderGold" />
+          <NavigationProperty Name="PledgeGold" Relationship="AURORAModel.FK_PledgeGold_Employee" FromRole="Employee" ToRole="PledgeGold" />
+          <NavigationProperty Name="Sale" Relationship="AURORAModel.FK_Sale_Employee" FromRole="Employee" ToRole="Sale" />
+        </EntityType>
+        <EntityType Name="FormatGold">
+          <Key>
+            <PropertyRef Name="FormatGold_Id" />
+          </Key>
+          <Property Name="FormatGold_Id" Type="String" Nullable="false" MaxLength="5" Unicode="false" FixedLength="true" />
+          <Property Name="FormatGold_Name" Type="String" MaxLength="20" Unicode="false" FixedLength="true" />
+          <Property Name="Prices_aretired_bundle" Type="String" MaxLength="10" Unicode="false" FixedLength="true" />
+          <NavigationProperty Name="GoldModel" Relationship="AURORAModel.FK_GoldModel_FormatGold" FromRole="FormatGold" ToRole="GoldModel" />
+          <NavigationProperty Name="OrderGold" Relationship="AURORAModel.FK_OrderGold_FormatGold" FromRole="FormatGold" ToRole="OrderGold" />
+        </EntityType>
+        <EntityType Name="FormatPledgeGold">
+          <Key>
+            <PropertyRef Name="FormatPledgeGold_Id" />
+          </Key>
+          <Property Name="FormatPledgeGold_Id" Type="String" Nullable="false" MaxLength="5" Unicode="false" FixedLength="true" />
+          <Property Name="FormatPledgeGold_Name" Type="String" MaxLength="20" Unicode="false" FixedLength="true" />
+          <NavigationProperty Name="GoldPledge" Relationship="AURORAModel.FK_GoldPledge_FormatPledgeGold" FromRole="FormatPledgeGold" ToRole="GoldPledge" />
+        </EntityType>
+        <EntityType Name="GoldModel">
+          <Key>
+            <PropertyRef Name="Gold_Id" />
+          </Key>
+          <Property Name="Gold_Id" Type="String" Nullable="false" MaxLength="3" Unicode="false" FixedLength="true" />
+          <Property Name="Gold_Amount" Type="String" MaxLength="30" Unicode="false" FixedLength="true" />
+          <Property Name="Total_Price" Type="String" MaxLength="10" Unicode="false" FixedLength="true" />
+          <Property Name="Goldweight_Id" Type="String" MaxLength="5" Unicode="false" FixedLength="true" />
+          <Property Name="FormatGold_Id" Type="String" MaxLength="5" Unicode="false" FixedLength="true" />
+          <Property Name="CategoryGold_Id" Type="String" MaxLength="5" Unicode="false" FixedLength="true" />
+          <Property Name="PatternGold_Id" Type="String" MaxLength="5" Unicode="false" FixedLength="true" />
+          <Property Name="SizeGold_Id" Type="String" MaxLength="5" Unicode="false" FixedLength="true" />
+          <Property Name="PercentGold_Id" Type="String" MaxLength="5" Unicode="false" FixedLength="true" />
+          <NavigationProperty Name="CategoryGold" Relationship="AURORAModel.FK_GoldModel_CategoryGold" FromRole="GoldModel" ToRole="CategoryGold" />
+          <NavigationProperty Name="DetailSale" Relationship="AURORAModel.FK_DetailSale_GoldModel" FromRole="GoldModel" ToRole="DetailSale" />
+          <NavigationProperty Name="FormatGold" Relationship="AURORAModel.FK_GoldModel_FormatGold" FromRole="GoldModel" ToRole="FormatGold" />
+          <NavigationProperty Name="GoldWeight" Relationship="AURORAModel.FK_GoldModel_GoldWeight" FromRole="GoldModel" ToRole="GoldWeight" />
+          <NavigationProperty Name="PatternGold" Relationship="AURORAModel.FK_GoldModel_PatternGold" FromRole="GoldModel" ToRole="PatternGold" />
+          <NavigationProperty Name="PercentGold" Relationship="AURORAModel.FK_GoldModel_PercentGold" FromRole="GoldModel" ToRole="PercentGold" />
+          <NavigationProperty Name="SizeGold" Relationship="AURORAModel.FK_GoldModel_SizeGold" FromRole="GoldModel" ToRole="SizeGold" />
+        </EntityType>
+        <EntityType Name="GoldPledge">
+          <Key>
+            <PropertyRef Name="GoldPledge_Id" />
+          </Key>
+          <Property Name="GoldPledge_Id" Type="String" Nullable="false" MaxLength="3" Unicode="false" FixedLength="true" />
+          <Property Name="Price_GoldPledge" Type="String" MaxLength="10" Unicode="false" FixedLength="true" />
+          <Property Name="FormatPledgeGold_Id" Type="String" MaxLength="5" Unicode="false" FixedLength="true" />
+          <Property Name="CategoryPledgeGold_Id" Type="String" MaxLength="5" Unicode="false" FixedLength="true" />
+          <Property Name="SizePledgeGold_Id" Type="String" MaxLength="5" Unicode="false" FixedLength="true" />
+          <Property Name="PatternPledgeGold_Id" Type="String" MaxLength="5" Unicode="false" FixedLength="true" />
+          <Property Name="GoldPledgeWeight_Id" Type="String" MaxLength="5" Unicode="false" FixedLength="true" />
+          <Property Name="PercentPledgeGold_Id" Type="String" MaxLength="5" Unicode="false" FixedLength="true" />
+          <NavigationProperty Name="CategoryPledgeGold" Relationship="AURORAModel.FK_GoldPledge_CategoryPledgeGold" FromRole="GoldPledge" ToRole="CategoryPledgeGold" />
+          <NavigationProperty Name="FormatPledgeGold" Relationship="AURORAModel.FK_GoldPledge_FormatPledgeGold" FromRole="GoldPledge" ToRole="FormatPledgeGold" />
+          <NavigationProperty Name="GoldPledgeWeight" Relationship="AURORAModel.FK_GoldPledge_GoldPledgeWeight" FromRole="GoldPledge" ToRole="GoldPledgeWeight" />
+          <NavigationProperty Name="PatternPledgeGold" Relationship="AURORAModel.FK_GoldPledge_PatternPledgeGold" FromRole="GoldPledge" ToRole="PatternPledgeGold" />
+          <NavigationProperty Name="PercentPledgeGold" Relationship="AURORAModel.FK_GoldPledge_PercentPledgeGold" FromRole="GoldPledge" ToRole="PercentPledgeGold" />
+          <NavigationProperty Name="SizePledgeGold" Relationship="AURORAModel.FK_GoldPledge_SizePledgeGold" FromRole="GoldPledge" ToRole="SizePledgeGold" />
+          <NavigationProperty Name="PledgeGold" Relationship="AURORAModel.FK_PledgeGold_GoldPledge" FromRole="GoldPledge" ToRole="PledgeGold" />
+        </EntityType>
+        <EntityType Name="GoldPledgeWeight">
+          <Key>
+            <PropertyRef Name="GoldPledgeWeight_Id" />
+          </Key>
+          <Property Name="GoldPledgeWeight_Id" Type="String" Nullable="false" MaxLength="5" Unicode="false" FixedLength="true" />
+          <Property Name="GoldPledgeWeight_Name" Type="String" MaxLength="20" Unicode="false" FixedLength="true" />
+          <NavigationProperty Name="GoldPledge" Relationship="AURORAModel.FK_GoldPledge_GoldPledgeWeight" FromRole="GoldPledgeWeight" ToRole="GoldPledge" />
+        </EntityType>
+        <EntityType Name="GoldWeight">
+          <Key>
+            <PropertyRef Name="GoldWeight_Id" />
+          </Key>
+          <Property Name="GoldWeight_Id" Type="String" Nullable="false" MaxLength="5" Unicode="false" FixedLength="true" />
+          <Property Name="GoldWeight_Name" Type="String" MaxLength="20" Unicode="false" FixedLength="true" />
+          <NavigationProperty Name="GoldModel" Relationship="AURORAModel.FK_GoldModel_GoldWeight" FromRole="GoldWeight" ToRole="GoldModel" />
+          <NavigationProperty Name="OrderGold" Relationship="AURORAModel.FK_OrderGold_GoldWeight" FromRole="GoldWeight" ToRole="OrderGold" />
+        </EntityType>
+        <EntityType Name="Member">
+          <Key>
+            <PropertyRef Name="Member_Id" />
+          </Key>
+          <Property Name="Member_Id" Type="String" Nullable="false" MaxLength="5" Unicode="false" FixedLength="true" />
+          <Property Name="Member_Name" Type="String" MaxLength="20" Unicode="false" FixedLength="true" />
+          <Property Name="Member_SurName" Type="String" MaxLength="20" Unicode="false" FixedLength="true" />
+          <Property Name="Member_Sex" Type="String" MaxLength="5" Unicode="false" FixedLength="true" />
+          <Property Name="Member_Address" Type="String" MaxLength="50" Unicode="false" FixedLength="true" />
+          <Property Name="Member_Tel" Type="String" MaxLength="10" Unicode="false" FixedLength="true" />
+          <Property Name="Member_IdentNumber" Type="String" MaxLength="13" Unicode="false" FixedLength="true" />
+          <Property Name="Province_Id" Type="String" MaxLength="5" Unicode="false" FixedLength="true" />
+          <NavigationProperty Name="Province" Relationship="AURORAModel.FK_Member_Province" FromRole="Member" ToRole="Province" />
+          <NavigationProperty Name="OrderGold" Relationship="AURORAModel.FK_OrderGold_Member" FromRole="Member" ToRole="OrderGold" />
+          <NavigationProperty Name="PledgeGold" Relationship="AURORAModel.FK_PledgeGold_Member" FromRole="Member" ToRole="PledgeGold" />
+          <NavigationProperty Name="Sale" Relationship="AURORAModel.FK_Sale_Member" FromRole="Member" ToRole="Sale" />
+        </EntityType>
+        <EntityType Name="OrderGold">
+          <Key>
+            <PropertyRef Name="OrderGold_Id" />
+          </Key>
+          <Property Name="OrderGold_Id" Type="String" Nullable="false" MaxLength="4" Unicode="false" FixedLength="true" />
+          <Property Name="OrderGold_Name" Type="String" MaxLength="20" Unicode="false" FixedLength="true" />
+          <Property Name="Date_OrderGold" Type="DateTime" />
+          <Property Name="LimitDate_OrderGold" Type="DateTime" />
+          <Property Name="Payment_Status" Type="String" MaxLength="30" Unicode="false" FixedLength="true" />
+          <Property Name="GoldWeight_Id" Type="String" MaxLength="5" Unicode="false" FixedLength="true" />
+          <Property Name="FormatGold_Id" Type="String" MaxLength="5" Unicode="false" FixedLength="true" />
+          <Property Name="CategoryGold_Id" Type="String" MaxLength="5" Unicode="false" FixedLength="true" />
+          <Property Name="PatternGold_Id" Type="String" MaxLength="5" Unicode="false" FixedLength="true" />
+          <Property Name="SizeGold_Id" Type="String" MaxLength="5" Unicode="false" FixedLength="true" />
+          <Property Name="PercentGold_Id" Type="String" MaxLength="5" Unicode="false" FixedLength="true" />
+          <Property Name="Member_Id" Type="String" MaxLength="5" Unicode="false" FixedLength="true" />
+          <Property Name="Payment_Id" Type="String" MaxLength="6" Unicode="false" FixedLength="true" />
+          <Property Name="Payment" Type="String" MaxLength="20" Unicode="false" FixedLength="true" />
+          <Property Name="Payment_Date" Type="String" MaxLength="30" Unicode="false" FixedLength="true" />
+          <Property Name="Employee_Id" Type="String" MaxLength="3" Unicode="false" FixedLength="true" />
+          <NavigationProperty Name="CategoryGold" Relationship="AURORAModel.FK_OrderGold_CategoryGold" FromRole="OrderGold" ToRole="CategoryGold" />
+          <NavigationProperty Name="Employee" Relationship="AURORAModel.FK_OrderGold_Employee" FromRole="OrderGold" ToRole="Employee" />
+          <NavigationProperty Name="FormatGold" Relationship="AURORAModel.FK_OrderGold_FormatGold" FromRole="OrderGold" ToRole="FormatGold" />
+          <NavigationProperty Name="GoldWeight" Relationship="AURORAModel.FK_OrderGold_GoldWeight" FromRole="OrderGold" ToRole="GoldWeight" />
+          <NavigationProperty Name="Member" Relationship="AURORAModel.FK_OrderGold_Member" FromRole="OrderGold" ToRole="Member" />
+          <NavigationProperty Name="PatternGold" Relationship="AURORAModel.FK_OrderGold_PatternGold" FromRole="OrderGold" ToRole="PatternGold" />
+          <NavigationProperty Name="Payment1" Relationship="AURORAModel.FK_OrderGold_Payment" FromRole="OrderGold" ToRole="Payment" />
+          <NavigationProperty Name="PercentGold" Relationship="AURORAModel.FK_OrderGold_PercentGold" FromRole="OrderGold" ToRole="PercentGold" />
+          <NavigationProperty Name="SizeGold" Relationship="AURORAModel.FK_OrderGold_SizeGold" FromRole="OrderGold" ToRole="SizeGold" />
+        </EntityType>
+        <EntityType Name="PatternGold">
+          <Key>
+            <PropertyRef Name="PatternGold_Id" />
+          </Key>
+          <Property Name="PatternGold_Id" Type="String" Nullable="false" MaxLength="5" Unicode="false" FixedLength="true" />
+          <Property Name="PatternGold_Name" Type="String" MaxLength="20" Unicode="false" FixedLength="true" />
+          <NavigationProperty Name="GoldModel" Relationship="AURORAModel.FK_GoldModel_PatternGold" FromRole="PatternGold" ToRole="GoldModel" />
+          <NavigationProperty Name="OrderGold" Relationship="AURORAModel.FK_OrderGold_PatternGold" FromRole="PatternGold" ToRole="OrderGold" />
+        </EntityType>
+        <EntityType Name="PatternPledgeGold">
+          <Key>
+            <PropertyRef Name="PatternPledgeGold_Id" />
+          </Key>
+          <Property Name="PatternPledgeGold_Id" Type="String" Nullable="false" MaxLength="5" Unicode="false" FixedLength="true" />
+          <Property Name="PatternPledgeGold_Name" Type="String" MaxLength="20" Unicode="false" FixedLength="true" />
+          <NavigationProperty Name="GoldPledge" Relationship="AURORAModel.FK_GoldPledge_PatternPledgeGold" FromRole="PatternPledgeGold" ToRole="GoldPledge" />
+        </EntityType>
+        <EntityType Name="Payment">
+          <Key>
+            <PropertyRef Name="Payment_Id" />
+          </Key>
+          <Property Name="Payment_Id" Type="String" Nullable="false" MaxLength="6" Unicode="false" FixedLength="true" />
+          <Property Name="Payment1" Type="String" MaxLength="20" Unicode="false" FixedLength="true" />
+          <Property Name="Payment_Date" Type="DateTime" />
+          <Property Name="PledgeGold_Id" Type="String" MaxLength="3" Unicode="false" FixedLength="true" />
+          <NavigationProperty Name="OrderGold" Relationship="AURORAModel.FK_OrderGold_Payment" FromRole="Payment" ToRole="OrderGold" />
+          <NavigationProperty Name="PledgeGold" Relationship="AURORAModel.FK_Payment_PledgeGold" FromRole="Payment" ToRole="PledgeGold" />
+          <NavigationProperty Name="Sale" Relationship="AURORAModel.FK_Sale_Payment" FromRole="Payment" ToRole="Sale" />
+        </EntityType>
+        <EntityType Name="PercentGold">
+          <Key>
+            <PropertyRef Name="PercentGold_Id" />
+          </Key>
+          <Property Name="PercentGold_Id" Type="String" Nullable="false" MaxLength="5" Unicode="false" FixedLength="true" />
+          <Property Name="PercentGold1" Type="String" MaxLength="20" Unicode="false" FixedLength="true" />
+          <NavigationProperty Name="GoldModel" Relationship="AURORAModel.FK_GoldModel_PercentGold" FromRole="PercentGold" ToRole="GoldModel" />
+          <NavigationProperty Name="OrderGold" Relationship="AURORAModel.FK_OrderGold_PercentGold" FromRole="PercentGold" ToRole="OrderGold" />
+        </EntityType>
+        <EntityType Name="PercentPledgeGold">
+          <Key>
+            <PropertyRef Name="PercentPledgeGold_Id" />
+          </Key>
+          <Property Name="PercentPledgeGold_Id" Type="String" Nullable="false" MaxLength="5" Unicode="false" FixedLength="true" />
+          <Property Name="PercentPledgeGold1" Type="String" MaxLength="20" Unicode="false" FixedLength="true" />
+          <NavigationProperty Name="GoldPledge" Relationship="AURORAModel.FK_GoldPledge_PercentPledgeGold" FromRole="PercentPledgeGold" ToRole="GoldPledge" />
+        </EntityType>
+        <EntityType Name="Permis">
+          <Key>
+            <PropertyRef Name="Permis_Id" />
+          </Key>
+          <Property Name="Permis_Id" Type="String" Nullable="false" MaxLength="2" Unicode="false" FixedLength="true" />
+          <Property Name="Permis_Name" Type="String" MaxLength="20" Unicode="false" FixedLength="true" />
+          <NavigationProperty Name="Employee" Relationship="AURORAModel.FK_Employee_Permis" FromRole="Permis" ToRole="Employee" />
+        </EntityType>
+        <EntityType Name="PledgeGold">
+          <Key>
+            <PropertyRef Name="PledgeGold_Id" />
+          </Key>
+          <Property Name="PledgeGold_Id" Type="String" Nullable="false" MaxLength="3" Unicode="false" FixedLength="true" />
+          <Property Name="Date_PledgeGold" Type="DateTime" />
+          <Property Name="Staus_PledgeGold" Type="String" MaxLength="30" Unicode="false" FixedLength="true" />
+          <Property Name="Payment_Status" Type="String" MaxLength="30" Unicode="false" FixedLength="true" />
+          <Property Name="RedeemGold_Id" Type="String" MaxLength="5" Unicode="false" FixedLength="true" />
+          <Property Name="Date_RedeemGold" Type="DateTime" />
+          <Property Name="Member_Id" Type="String" MaxLength="5" Unicode="false" FixedLength="true" />
+          <Property Name="GoldPledge_Id" Type="String" MaxLength="3" Unicode="false" FixedLength="true" />
+          <Property Name="Employee_Id" Type="String" MaxLength="3" Unicode="false" FixedLength="true" />
+          <NavigationProperty Name="Employee" Relationship="AURORAModel.FK_PledgeGold_Employee" FromRole="PledgeGold" ToRole="Employee" />
+          <NavigationProperty Name="GoldPledge" Relationship="AURORAModel.FK_PledgeGold_GoldPledge" FromRole="PledgeGold" ToRole="GoldPledge" />
+          <NavigationProperty Name="Member" Relationship="AURORAModel.FK_PledgeGold_Member" FromRole="PledgeGold" ToRole="Member" />
+          <NavigationProperty Name="Payment" Relationship="AURORAModel.FK_Payment_PledgeGold" FromRole="PledgeGold" ToRole="Payment" />
+        </EntityType>
+        <EntityType Name="Province">
+          <Key>
+            <PropertyRef Name="Province_Id" />
+          </Key>
+          <Property Name="Province_Id" Type="String" Nullable="false" MaxLength="5" Unicode="false" FixedLength="true" />
+          <Property Name="Province_Name" Type="String" MaxLength="15" Unicode="false" FixedLength="true" />
+          <NavigationProperty Name="Member" Relationship="AURORAModel.FK_Member_Province" FromRole="Province" ToRole="Member" />
+        </EntityType>
+        <EntityType Name="Sale">
+          <Key>
+            <PropertyRef Name="Sale_Id" />
+          </Key>
+          <Property Name="Sale_Id" Type="String" Nullable="false" MaxLength="4" Unicode="false" FixedLength="true" />
+          <Property Name="DateofSale" Type="DateTime" />
+          <Property Name="TimeofSale" Type="Time" />
+          <Property Name="Payment_Status" Type="String" MaxLength="30" Unicode="false" FixedLength="true" />
+          <Property Name="Employee_Id" Type="String" MaxLength="3" Unicode="false" FixedLength="true" />
+          <Property Name="Member_Id" Type="String" MaxLength="5" Unicode="false" FixedLength="true" />
+          <Property Name="Payment_Id" Type="String" MaxLength="6" Unicode="false" FixedLength="true" />
+          <Property Name="Payment" Type="String" MaxLength="20" Unicode="false" FixedLength="true" />
+          <Property Name="Payment_Date" Type="DateTime" />
+          <NavigationProperty Name="DetailSale" Relationship="AURORAModel.FK_Sale_DetailSale" FromRole="Sale" ToRole="DetailSale" />
+          <NavigationProperty Name="Employee" Relationship="AURORAModel.FK_Sale_Employee" FromRole="Sale" ToRole="Employee" />
+          <NavigationProperty Name="Member" Relationship="AURORAModel.FK_Sale_Member" FromRole="Sale" ToRole="Member" />
+          <NavigationProperty Name="Payment1" Relationship="AURORAModel.FK_Sale_Payment" FromRole="Sale" ToRole="Payment" />
+        </EntityType>
+        <EntityType Name="SizeGold">
+          <Key>
+            <PropertyRef Name="SizeGold_Id" />
+          </Key>
+          <Property Name="SizeGold_Id" Type="String" Nullable="false" MaxLength="5" Unicode="false" FixedLength="true" />
+          <Property Name="SizeGold_Name" Type="String" MaxLength="20" Unicode="false" FixedLength="true" />
+          <NavigationProperty Name="GoldModel" Relationship="AURORAModel.FK_GoldModel_SizeGold" FromRole="SizeGold" ToRole="GoldModel" />
+          <NavigationProperty Name="OrderGold" Relationship="AURORAModel.FK_OrderGold_SizeGold" FromRole="SizeGold" ToRole="OrderGold" />
+        </EntityType>
+        <EntityType Name="SizePledgeGold">
+          <Key>
+            <PropertyRef Name="SizePledgeGold_Id" />
+          </Key>
+          <Property Name="SizePledgeGold_Id" Type="String" Nullable="false" MaxLength="5" Unicode="false" FixedLength="true" />
+          <Property Name="SizePledgeGold_Name" Type="String" MaxLength="20" Unicode="false" FixedLength="true" />
+          <NavigationProperty Name="GoldPledge" Relationship="AURORAModel.FK_GoldPledge_SizePledgeGold" FromRole="SizePledgeGold" ToRole="GoldPledge" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <Association Name="FK_GoldModel_CategoryGold">
+          <End Role="CategoryGold" Type="AURORAModel.CategoryGold" Multiplicity="0..1" />
+          <End Role="GoldModel" Type="AURORAModel.GoldModel" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CategoryGold">
+              <PropertyRef Name="CategoryGold_Id" />
+            </Principal>
+            <Dependent Role="GoldModel">
+              <PropertyRef Name="CategoryGold_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OrderGold_CategoryGold">
+          <End Role="CategoryGold" Type="AURORAModel.CategoryGold" Multiplicity="0..1" />
+          <End Role="OrderGold" Type="AURORAModel.OrderGold" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CategoryGold">
+              <PropertyRef Name="CategoryGold_Id" />
+            </Principal>
+            <Dependent Role="OrderGold">
+              <PropertyRef Name="CategoryGold_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_GoldPledge_CategoryPledgeGold">
+          <End Role="CategoryPledgeGold" Type="AURORAModel.CategoryPledgeGold" Multiplicity="0..1" />
+          <End Role="GoldPledge" Type="AURORAModel.GoldPledge" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CategoryPledgeGold">
+              <PropertyRef Name="CategoryPledgeGold_Id" />
+            </Principal>
+            <Dependent Role="GoldPledge">
+              <PropertyRef Name="CategoryPledgeGold_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DetailSale_GoldModel">
+          <End Role="GoldModel" Type="AURORAModel.GoldModel" Multiplicity="0..1" />
+          <End Role="DetailSale" Type="AURORAModel.DetailSale" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GoldModel">
+              <PropertyRef Name="Gold_Id" />
+            </Principal>
+            <Dependent Role="DetailSale">
+              <PropertyRef Name="Gold_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Sale_DetailSale">
+          <End Role="DetailSale" Type="AURORAModel.DetailSale" Multiplicity="1" />
+          <End Role="Sale" Type="AURORAModel.Sale" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="DetailSale">
+              <PropertyRef Name="Sale_Id" />
+            </Principal>
+            <Dependent Role="Sale">
+              <PropertyRef Name="Sale_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Employee_Permis">
+          <End Role="Permis" Type="AURORAModel.Permis" Multiplicity="0..1" />
+          <End Role="Employee" Type="AURORAModel.Employee" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Permis">
+              <PropertyRef Name="Permis_Id" />
+            </Principal>
+            <Dependent Role="Employee">
+              <PropertyRef Name="Permis_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OrderGold_Employee">
+          <End Role="Employee" Type="AURORAModel.Employee" Multiplicity="0..1" />
+          <End Role="OrderGold" Type="AURORAModel.OrderGold" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="Employee_Id" />
+            </Principal>
+            <Dependent Role="OrderGold">
+              <PropertyRef Name="Employee_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PledgeGold_Employee">
+          <End Role="Employee" Type="AURORAModel.Employee" Multiplicity="0..1" />
+          <End Role="PledgeGold" Type="AURORAModel.PledgeGold" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="Employee_Id" />
+            </Principal>
+            <Dependent Role="PledgeGold">
+              <PropertyRef Name="Employee_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Sale_Employee">
+          <End Role="Employee" Type="AURORAModel.Employee" Multiplicity="0..1" />
+          <End Role="Sale" Type="AURORAModel.Sale" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="Employee_Id" />
+            </Principal>
+            <Dependent Role="Sale">
+              <PropertyRef Name="Employee_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_GoldModel_FormatGold">
+          <End Role="FormatGold" Type="AURORAModel.FormatGold" Multiplicity="0..1" />
+          <End Role="GoldModel" Type="AURORAModel.GoldModel" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="FormatGold">
+              <PropertyRef Name="FormatGold_Id" />
+            </Principal>
+            <Dependent Role="GoldModel">
+              <PropertyRef Name="FormatGold_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OrderGold_FormatGold">
+          <End Role="FormatGold" Type="AURORAModel.FormatGold" Multiplicity="0..1" />
+          <End Role="OrderGold" Type="AURORAModel.OrderGold" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="FormatGold">
+              <PropertyRef Name="FormatGold_Id" />
+            </Principal>
+            <Dependent Role="OrderGold">
+              <PropertyRef Name="FormatGold_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_GoldPledge_FormatPledgeGold">
+          <End Role="FormatPledgeGold" Type="AURORAModel.FormatPledgeGold" Multiplicity="0..1" />
+          <End Role="GoldPledge" Type="AURORAModel.GoldPledge" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="FormatPledgeGold">
+              <PropertyRef Name="FormatPledgeGold_Id" />
+            </Principal>
+            <Dependent Role="GoldPledge">
+              <PropertyRef Name="FormatPledgeGold_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_GoldModel_GoldWeight">
+          <End Role="GoldWeight" Type="AURORAModel.GoldWeight" Multiplicity="0..1" />
+          <End Role="GoldModel" Type="AURORAModel.GoldModel" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GoldWeight">
+              <PropertyRef Name="GoldWeight_Id" />
+            </Principal>
+            <Dependent Role="GoldModel">
+              <PropertyRef Name="Goldweight_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_GoldModel_PatternGold">
+          <End Role="PatternGold" Type="AURORAModel.PatternGold" Multiplicity="0..1" />
+          <End Role="GoldModel" Type="AURORAModel.GoldModel" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PatternGold">
+              <PropertyRef Name="PatternGold_Id" />
+            </Principal>
+            <Dependent Role="GoldModel">
+              <PropertyRef Name="PatternGold_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_GoldModel_PercentGold">
+          <End Role="PercentGold" Type="AURORAModel.PercentGold" Multiplicity="0..1" />
+          <End Role="GoldModel" Type="AURORAModel.GoldModel" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PercentGold">
+              <PropertyRef Name="PercentGold_Id" />
+            </Principal>
+            <Dependent Role="GoldModel">
+              <PropertyRef Name="PercentGold_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_GoldModel_SizeGold">
+          <End Role="SizeGold" Type="AURORAModel.SizeGold" Multiplicity="0..1" />
+          <End Role="GoldModel" Type="AURORAModel.GoldModel" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SizeGold">
+              <PropertyRef Name="SizeGold_Id" />
+            </Principal>
+            <Dependent Role="GoldModel">
+              <PropertyRef Name="SizeGold_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_GoldPledge_GoldPledgeWeight">
+          <End Role="GoldPledgeWeight" Type="AURORAModel.GoldPledgeWeight" Multiplicity="0..1" />
+          <End Role="GoldPledge" Type="AURORAModel.GoldPledge" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GoldPledgeWeight">
+              <PropertyRef Name="GoldPledgeWeight_Id" />
+            </Principal>
+            <Dependent Role="GoldPledge">
+              <PropertyRef Name="GoldPledgeWeight_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_GoldPledge_PatternPledgeGold">
+          <End Role="PatternPledgeGold" Type="AURORAModel.PatternPledgeGold" Multiplicity="0..1" />
+          <End Role="GoldPledge" Type="AURORAModel.GoldPledge" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PatternPledgeGold">
+              <PropertyRef Name="PatternPledgeGold_Id" />
+            </Principal>
+            <Dependent Role="GoldPledge">
+              <PropertyRef Name="PatternPledgeGold_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_GoldPledge_PercentPledgeGold">
+          <End Role="PercentPledgeGold" Type="AURORAModel.PercentPledgeGold" Multiplicity="0..1" />
+          <End Role="GoldPledge" Type="AURORAModel.GoldPledge" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PercentPledgeGold">
+              <PropertyRef Name="PercentPledgeGold_Id" />
+            </Principal>
+            <Dependent Role="GoldPledge">
+              <PropertyRef Name="PercentPledgeGold_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_GoldPledge_SizePledgeGold">
+          <End Role="SizePledgeGold" Type="AURORAModel.SizePledgeGold" Multiplicity="0..1" />
+          <End Role="GoldPledge" Type="AURORAModel.GoldPledge" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SizePledgeGold">
+              <PropertyRef Name="SizePledgeGold_Id" />
+            </Principal>
+            <Dependent Role="GoldPledge">
+              <PropertyRef Name="SizePledgeGold_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PledgeGold_GoldPledge">
+          <End Role="GoldPledge" Type="AURORAModel.GoldPledge" Multiplicity="0..1" />
+          <End Role="PledgeGold" Type="AURORAModel.PledgeGold" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GoldPledge">
+              <PropertyRef Name="GoldPledge_Id" />
+            </Principal>
+            <Dependent Role="PledgeGold">
+              <PropertyRef Name="GoldPledge_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OrderGold_GoldWeight">
+          <End Role="GoldWeight" Type="AURORAModel.GoldWeight" Multiplicity="0..1" />
+          <End Role="OrderGold" Type="AURORAModel.OrderGold" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="GoldWeight">
+              <PropertyRef Name="GoldWeight_Id" />
+            </Principal>
+            <Dependent Role="OrderGold">
+              <PropertyRef Name="GoldWeight_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Member_Province">
+          <End Role="Province" Type="AURORAModel.Province" Multiplicity="0..1" />
+          <End Role="Member" Type="AURORAModel.Member" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Province">
+              <PropertyRef Name="Province_Id" />
+            </Principal>
+            <Dependent Role="Member">
+              <PropertyRef Name="Province_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OrderGold_Member">
+          <End Role="Member" Type="AURORAModel.Member" Multiplicity="0..1" />
+          <End Role="OrderGold" Type="AURORAModel.OrderGold" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Member">
+              <PropertyRef Name="Member_Id" />
+            </Principal>
+            <Dependent Role="OrderGold">
+              <PropertyRef Name="Member_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PledgeGold_Member">
+          <End Role="Member" Type="AURORAModel.Member" Multiplicity="0..1" />
+          <End Role="PledgeGold" Type="AURORAModel.PledgeGold" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Member">
+              <PropertyRef Name="Member_Id" />
+            </Principal>
+            <Dependent Role="PledgeGold">
+              <PropertyRef Name="Member_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Sale_Member">
+          <End Role="Member" Type="AURORAModel.Member" Multiplicity="0..1" />
+          <End Role="Sale" Type="AURORAModel.Sale" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Member">
+              <PropertyRef Name="Member_Id" />
+            </Principal>
+            <Dependent Role="Sale">
+              <PropertyRef Name="Member_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OrderGold_PatternGold">
+          <End Role="PatternGold" Type="AURORAModel.PatternGold" Multiplicity="0..1" />
+          <End Role="OrderGold" Type="AURORAModel.OrderGold" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PatternGold">
+              <PropertyRef Name="PatternGold_Id" />
+            </Principal>
+            <Dependent Role="OrderGold">
+              <PropertyRef Name="PatternGold_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OrderGold_Payment">
+          <End Role="Payment" Type="AURORAModel.Payment" Multiplicity="0..1" />
+          <End Role="OrderGold" Type="AURORAModel.OrderGold" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Payment">
+              <PropertyRef Name="Payment_Id" />
+            </Principal>
+            <Dependent Role="OrderGold">
+              <PropertyRef Name="Payment_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OrderGold_PercentGold">
+          <End Role="PercentGold" Type="AURORAModel.PercentGold" Multiplicity="0..1" />
+          <End Role="OrderGold" Type="AURORAModel.OrderGold" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PercentGold">
+              <PropertyRef Name="PercentGold_Id" />
+            </Principal>
+            <Dependent Role="OrderGold">
+              <PropertyRef Name="PercentGold_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OrderGold_SizeGold">
+          <End Role="SizeGold" Type="AURORAModel.SizeGold" Multiplicity="0..1" />
+          <End Role="OrderGold" Type="AURORAModel.OrderGold" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SizeGold">
+              <PropertyRef Name="SizeGold_Id" />
+            </Principal>
+            <Dependent Role="OrderGold">
+              <PropertyRef Name="SizeGold_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Payment_PledgeGold">
+          <End Role="PledgeGold" Type="AURORAModel.PledgeGold" Multiplicity="0..1" />
+          <End Role="Payment" Type="AURORAModel.Payment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PledgeGold">
+              <PropertyRef Name="PledgeGold_Id" />
+            </Principal>
+            <Dependent Role="Payment">
+              <PropertyRef Name="PledgeGold_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Sale_Payment">
+          <End Role="Payment" Type="AURORAModel.Payment" Multiplicity="0..1" />
+          <End Role="Sale" Type="AURORAModel.Sale" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Payment">
+              <PropertyRef Name="Payment_Id" />
+            </Principal>
+            <Dependent Role="Sale">
+              <PropertyRef Name="Payment_Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="AURORAModelStoreContainer" CdmEntityContainer="AURORAEntities">
+          <EntitySetMapping Name="CategoryGold"><EntityTypeMapping TypeName="AURORAModel.CategoryGold"><MappingFragment StoreEntitySet="CategoryGold">
+            <ScalarProperty Name="CategoryGold_Id" ColumnName="CategoryGold_Id" />
+            <ScalarProperty Name="CategoryGold_Name" ColumnName="CategoryGold_Name" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="CategoryPledgeGold"><EntityTypeMapping TypeName="AURORAModel.CategoryPledgeGold"><MappingFragment StoreEntitySet="CategoryPledgeGold">
+            <ScalarProperty Name="CategoryPledgeGold_Id" ColumnName="CategoryPledgeGold_Id" />
+            <ScalarProperty Name="CategoryPledgeGold_Name" ColumnName="CategoryPledgeGold_Name" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="DetailSale"><EntityTypeMapping TypeName="AURORAModel.DetailSale"><MappingFragment StoreEntitySet="DetailSale">
+            <ScalarProperty Name="Sale_Id" ColumnName="Sale_Id" />
+            <ScalarProperty Name="Gold_Id" ColumnName="Gold_Id" />
+            <ScalarProperty Name="Gold_Amount" ColumnName="Gold_Amount" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Employee"><EntityTypeMapping TypeName="AURORAModel.Employee"><MappingFragment StoreEntitySet="Employee">
+            <ScalarProperty Name="Employee_Id" ColumnName="Employee_Id" />
+            <ScalarProperty Name="Employee_Name" ColumnName="Employee_Name" />
+            <ScalarProperty Name="Employee_SurName" ColumnName="Employee_SurName" />
+            <ScalarProperty Name="Ident_Number" ColumnName="Ident_Number" />
+            <ScalarProperty Name="Employee_Sex" ColumnName="Employee_Sex" />
+            <ScalarProperty Name="Employee_Address" ColumnName="Employee_Address" />
+            <ScalarProperty Name="UserName" ColumnName="UserName" />
+            <ScalarProperty Name="PassWord" ColumnName="PassWord" />
+            <ScalarProperty Name="Permis_Id" ColumnName="Permis_Id" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="FormatGold"><EntityTypeMapping TypeName="AURORAModel.FormatGold"><MappingFragment StoreEntitySet="FormatGold">
+            <ScalarProperty Name="FormatGold_Id" ColumnName="FormatGold_Id" />
+            <ScalarProperty Name="FormatGold_Name" ColumnName="FormatGold_Name" />
+            <ScalarProperty Name="Prices_aretired_bundle" ColumnName="Prices_aretired_bundle" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="FormatPledgeGold"><EntityTypeMapping TypeName="AURORAModel.FormatPledgeGold"><MappingFragment StoreEntitySet="FormatPledgeGold">
+            <ScalarProperty Name="FormatPledgeGold_Id" ColumnName="FormatPledgeGold_Id" />
+            <ScalarProperty Name="FormatPledgeGold_Name" ColumnName="FormatPledgeGold_Name" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="GoldModel"><EntityTypeMapping TypeName="AURORAModel.GoldModel"><MappingFragment StoreEntitySet="GoldModel">
+            <ScalarProperty Name="Gold_Id" ColumnName="Gold_Id" />
+            <ScalarProperty Name="Gold_Amount" ColumnName="Gold_Amount" />
+            <ScalarProperty Name="Total_Price" ColumnName="Total_Price" />
+            <ScalarProperty Name="Goldweight_Id" ColumnName="Goldweight_Id" />
+            <ScalarProperty Name="FormatGold_Id" ColumnName="FormatGold_Id" />
+            <ScalarProperty Name="CategoryGold_Id" ColumnName="CategoryGold_Id" />
+            <ScalarProperty Name="PatternGold_Id" ColumnName="PatternGold_Id" />
+            <ScalarProperty Name="SizeGold_Id" ColumnName="SizeGold_Id" />
+            <ScalarProperty Name="PercentGold_Id" ColumnName="PercentGold_Id" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="GoldPledge"><EntityTypeMapping TypeName="AURORAModel.GoldPledge"><MappingFragment StoreEntitySet="GoldPledge">
+            <ScalarProperty Name="GoldPledge_Id" ColumnName="GoldPledge_Id" />
+            <ScalarProperty Name="Price_GoldPledge" ColumnName="Price_GoldPledge" />
+            <ScalarProperty Name="FormatPledgeGold_Id" ColumnName="FormatPledgeGold_Id" />
+            <ScalarProperty Name="CategoryPledgeGold_Id" ColumnName="CategoryPledgeGold_Id" />
+            <ScalarProperty Name="SizePledgeGold_Id" ColumnName="SizePledgeGold_Id" />
+            <ScalarProperty Name="PatternPledgeGold_Id" ColumnName="PatternPledgeGold_Id" />
+            <ScalarProperty Name="GoldPledgeWeight_Id" ColumnName="GoldPledgeWeight_Id" />
+            <ScalarProperty Name="PercentPledgeGold_Id" ColumnName="PercentPledgeGold_Id" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="GoldPledgeWeight"><EntityTypeMapping TypeName="AURORAModel.GoldPledgeWeight"><MappingFragment StoreEntitySet="GoldPledgeWeight">
+            <ScalarProperty Name="GoldPledgeWeight_Id" ColumnName="GoldPledgeWeight_Id" />
+            <ScalarProperty Name="GoldPledgeWeight_Name" ColumnName="GoldPledgeWeight_Name" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="GoldWeight"><EntityTypeMapping TypeName="AURORAModel.GoldWeight"><MappingFragment StoreEntitySet="GoldWeight">
+            <ScalarProperty Name="GoldWeight_Id" ColumnName="GoldWeight_Id" />
+            <ScalarProperty Name="GoldWeight_Name" ColumnName="GoldWeight_Name" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Member"><EntityTypeMapping TypeName="AURORAModel.Member"><MappingFragment StoreEntitySet="Member">
+            <ScalarProperty Name="Member_Id" ColumnName="Member_Id" />
+            <ScalarProperty Name="Member_Name" ColumnName="Member_Name" />
+            <ScalarProperty Name="Member_SurName" ColumnName="Member_SurName" />
+            <ScalarProperty Name="Member_Sex" ColumnName="Member_Sex" />
+            <ScalarProperty Name="Member_Address" ColumnName="Member_Address" />
+            <ScalarProperty Name="Member_Tel" ColumnName="Member_Tel" />
+            <ScalarProperty Name="Member_IdentNumber" ColumnName="Member_IdentNumber" />
+            <ScalarProperty Name="Province_Id" ColumnName="Province_Id" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="OrderGold"><EntityTypeMapping TypeName="AURORAModel.OrderGold"><MappingFragment StoreEntitySet="OrderGold">
+            <ScalarProperty Name="OrderGold_Id" ColumnName="OrderGold_Id" />
+            <ScalarProperty Name="OrderGold_Name" ColumnName="OrderGold_Name" />
+            <ScalarProperty Name="Date_OrderGold" ColumnName="Date_OrderGold" />
+            <ScalarProperty Name="LimitDate_OrderGold" ColumnName="LimitDate_OrderGold" />
+            <ScalarProperty Name="Payment_Status" ColumnName="Payment_Status" />
+            <ScalarProperty Name="GoldWeight_Id" ColumnName="GoldWeight_Id" />
+            <ScalarProperty Name="FormatGold_Id" ColumnName="FormatGold_Id" />
+            <ScalarProperty Name="CategoryGold_Id" ColumnName="CategoryGold_Id" />
+            <ScalarProperty Name="PatternGold_Id" ColumnName="PatternGold_Id" />
+            <ScalarProperty Name="SizeGold_Id" ColumnName="SizeGold_Id" />
+            <ScalarProperty Name="PercentGold_Id" ColumnName="PercentGold_Id" />
+            <ScalarProperty Name="Member_Id" ColumnName="Member_Id" />
+            <ScalarProperty Name="Payment_Id" ColumnName="Payment_Id" />
+            <ScalarProperty Name="Payment" ColumnName="Payment" />
+            <ScalarProperty Name="Payment_Date" ColumnName="Payment_Date" />
+            <ScalarProperty Name="Employee_Id" ColumnName="Employee_Id" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="PatternGold"><EntityTypeMapping TypeName="AURORAModel.PatternGold"><MappingFragment StoreEntitySet="PatternGold">
+            <ScalarProperty Name="PatternGold_Id" ColumnName="PatternGold_Id" />
+            <ScalarProperty Name="PatternGold_Name" ColumnName="PatternGold_Name" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="PatternPledgeGold"><EntityTypeMapping TypeName="AURORAModel.PatternPledgeGold"><MappingFragment StoreEntitySet="PatternPledgeGold">
+            <ScalarProperty Name="PatternPledgeGold_Id" ColumnName="PatternPledgeGold_Id" />
+            <ScalarProperty Name="PatternPledgeGold_Name" ColumnName="PatternPledgeGold_Name" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Payment"><EntityTypeMapping TypeName="AURORAModel.Payment"><MappingFragment StoreEntitySet="Payment">
+            <ScalarProperty Name="Payment_Id" ColumnName="Payment_Id" />
+            <ScalarProperty Name="Payment1" ColumnName="Payment" />
+            <ScalarProperty Name="Payment_Date" ColumnName="Payment_Date" />
+            <ScalarProperty Name="PledgeGold_Id" ColumnName="PledgeGold_Id" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="PercentGold"><EntityTypeMapping TypeName="AURORAModel.PercentGold"><MappingFragment StoreEntitySet="PercentGold">
+            <ScalarProperty Name="PercentGold_Id" ColumnName="PercentGold_Id" />
+            <ScalarProperty Name="PercentGold1" ColumnName="PercentGold" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="PercentPledgeGold"><EntityTypeMapping TypeName="AURORAModel.PercentPledgeGold"><MappingFragment StoreEntitySet="PercentPledgeGold">
+            <ScalarProperty Name="PercentPledgeGold_Id" ColumnName="PercentPledgeGold_Id" />
+            <ScalarProperty Name="PercentPledgeGold1" ColumnName="PercentPledgeGold" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Permis"><EntityTypeMapping TypeName="AURORAModel.Permis"><MappingFragment StoreEntitySet="Permis">
+            <ScalarProperty Name="Permis_Id" ColumnName="Permis_Id" />
+            <ScalarProperty Name="Permis_Name" ColumnName="Permis_Name" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="PledgeGold"><EntityTypeMapping TypeName="AURORAModel.PledgeGold"><MappingFragment StoreEntitySet="PledgeGold">
+            <ScalarProperty Name="PledgeGold_Id" ColumnName="PledgeGold_Id" />
+            <ScalarProperty Name="Date_PledgeGold" ColumnName="Date_PledgeGold" />
+            <ScalarProperty Name="Staus_PledgeGold" ColumnName="Staus_PledgeGold" />
+            <ScalarProperty Name="Payment_Status" ColumnName="Payment_Status" />
+            <ScalarProperty Name="RedeemGold_Id" ColumnName="RedeemGold_Id" />
+            <ScalarProperty Name="Date_RedeemGold" ColumnName="Date_RedeemGold" />
+            <ScalarProperty Name="Member_Id" ColumnName="Member_Id" />
+            <ScalarProperty Name="GoldPledge_Id" ColumnName="GoldPledge_Id" />
+            <ScalarProperty Name="Employee_Id" ColumnName="Employee_Id" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Province"><EntityTypeMapping TypeName="AURORAModel.Province"><MappingFragment StoreEntitySet="Province">
+            <ScalarProperty Name="Province_Id" ColumnName="Province_Id" />
+            <ScalarProperty Name="Province_Name" ColumnName="Province_Name" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Sale"><EntityTypeMapping TypeName="AURORAModel.Sale"><MappingFragment StoreEntitySet="Sale">
+            <ScalarProperty Name="Sale_Id" ColumnName="Sale_Id" />
+            <ScalarProperty Name="DateofSale" ColumnName="DateofSale" />
+            <ScalarProperty Name="TimeofSale" ColumnName="TimeofSale" />
+            <ScalarProperty Name="Payment_Status" ColumnName="Payment_Status" />
+            <ScalarProperty Name="Employee_Id" ColumnName="Employee_Id" />
+            <ScalarProperty Name="Member_Id" ColumnName="Member_Id" />
+            <ScalarProperty Name="Payment_Id" ColumnName="Payment_Id" />
+            <ScalarProperty Name="Payment" ColumnName="Payment" />
+            <ScalarProperty Name="Payment_Date" ColumnName="Payment_Date" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="SizeGold"><EntityTypeMapping TypeName="AURORAModel.SizeGold"><MappingFragment StoreEntitySet="SizeGold">
+            <ScalarProperty Name="SizeGold_Id" ColumnName="SizeGold_Id" />
+            <ScalarProperty Name="SizeGold_Name" ColumnName="SizeGold_Name" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="SizePledgeGold"><EntityTypeMapping TypeName="AURORAModel.SizePledgeGold"><MappingFragment StoreEntitySet="SizePledgeGold">
+            <ScalarProperty Name="SizePledgeGold_Id" ColumnName="SizePledgeGold_Id" />
+            <ScalarProperty Name="SizePledgeGold_Name" ColumnName="SizePledgeGold_Name" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams"><EntityTypeMapping TypeName="AURORAModel.sysdiagrams"><MappingFragment StoreEntitySet="sysdiagrams">
+            <ScalarProperty Name="name" ColumnName="name" />
+            <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+            <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+            <ScalarProperty Name="version" ColumnName="version" />
+            <ScalarProperty Name="definition" ColumnName="definition" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="Entity">
+        <EntityTypeShape EntityType="AURORAModel.CategoryGold" Width="1.5" PointX="0.75" PointY="7.75" Height="1.7879850260416657" IsExpanded="true" />
+        <EntityTypeShape EntityType="AURORAModel.CategoryPledgeGold" Width="1.5" PointX="1.5" PointY="25.125" Height="1.5956835937500031" IsExpanded="true" />
+        <EntityTypeShape EntityType="AURORAModel.DetailSale" Width="1.5" PointX="5.25" PointY="12.625" Height="1.9802864583333317" IsExpanded="true" />
+        <EntityTypeShape EntityType="AURORAModel.Employee" Width="1.5" PointX="5.25" PointY="0.75" Height="3.5186979166666656" IsExpanded="true" />
+        <EntityTypeShape EntityType="AURORAModel.FormatGold" Width="1.5" PointX="0.75" PointY="11.375" Height="1.9802864583333317" IsExpanded="true" />
+        <EntityTypeShape EntityType="AURORAModel.FormatPledgeGold" Width="1.5" PointX="1.5" PointY="27.5" Height="1.595683593749996" IsExpanded="true" />
+        <EntityTypeShape EntityType="AURORAModel.GoldModel" Width="1.5" PointX="3" PointY="6.5" Height="4.0956022135416665" IsExpanded="true" />
+        <EntityTypeShape EntityType="AURORAModel.GoldPledge" Width="1.5" PointX="0.75" PointY="29.75" Height="3.9033007812499996" IsExpanded="true" />
+        <EntityTypeShape EntityType="AURORAModel.GoldPledgeWeight" Width="1.5" PointX="1.5" PointY="34.75" Height="1.595683593749996" IsExpanded="true" />
+        <EntityTypeShape EntityType="AURORAModel.GoldWeight" Width="1.5" PointX="0.75" PointY="14" Height="1.7879850260416674" IsExpanded="true" />
+        <EntityTypeShape EntityType="AURORAModel.Member" Width="1.5" PointX="5.25" PointY="17" Height="3.3263964843750031" IsExpanded="true" />
+        <EntityTypeShape EntityType="AURORAModel.OrderGold" Width="1.5" PointX="6" PointY="5.625" Height="5.8263151041666665" IsExpanded="true" />
+        <EntityTypeShape EntityType="AURORAModel.PatternGold" Width="1.5" PointX="0.75" PointY="16.625" Height="1.7879850260416674" IsExpanded="true" />
+        <EntityTypeShape EntityType="AURORAModel.PatternPledgeGold" Width="1.5" PointX="1.5" PointY="37.125" Height="1.5956835937500102" IsExpanded="true" />
+        <EntityTypeShape EntityType="AURORAModel.Payment" Width="1.5" PointX="5.25" PointY="30.625" Height="2.3648893229166639" IsExpanded="true" />
+        <EntityTypeShape EntityType="AURORAModel.PercentGold" Width="1.5" PointX="0.75" PointY="19.125" Height="1.7879850260416674" IsExpanded="true" />
+        <EntityTypeShape EntityType="AURORAModel.PercentPledgeGold" Width="1.5" PointX="1.5" PointY="39.5" Height="1.595683593749996" IsExpanded="true" />
+        <EntityTypeShape EntityType="AURORAModel.Permis" Width="1.5" PointX="3" PointY="3.875" Height="1.5956835937500031" IsExpanded="true" />
+        <EntityTypeShape EntityType="AURORAModel.PledgeGold" Width="1.5" PointX="3" PointY="30" Height="3.5186979166666639" IsExpanded="true" />
+        <EntityTypeShape EntityType="AURORAModel.Province" Width="1.5" PointX="3" PointY="17.875" Height="1.5956835937500031" IsExpanded="true" />
+        <EntityTypeShape EntityType="AURORAModel.Sale" Width="1.5" PointX="7.5" PointY="12.875" Height="3.5186979166666674" IsExpanded="true" />
+        <EntityTypeShape EntityType="AURORAModel.SizeGold" Width="1.5" PointX="0.75" PointY="21.625" Height="1.7879850260416674" IsExpanded="true" />
+        <EntityTypeShape EntityType="AURORAModel.SizePledgeGold" Width="1.5" PointX="1.5" PointY="41.875" Height="1.595683593749996" IsExpanded="true" />
+        <EntityTypeShape EntityType="AURORAModel.sysdiagrams" Width="1.5" PointX="7.75" PointY="2.625" Height="1.9802864583333246" IsExpanded="true" />
+        <AssociationConnector Association="AURORAModel.FK_GoldModel_CategoryGold" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="8.6439925130208337" />
+          <ConnectorPoint PointX="2.5416666666666665" PointY="8.6439925130208337" />
+          <ConnectorPoint PointX="2.7708333333333335" PointY="8.6439925130208337" />
+          <ConnectorPoint PointX="3" PointY="8.6439925130208337" />
+        </AssociationConnector>
+        <AssociationConnector Association="AURORAModel.FK_OrderGold_CategoryGold" ManuallyRouted="false">
+          <ConnectorPoint PointX="1.5" PointY="7.75" />
+          <ConnectorPoint PointX="1.5" PointY="6.03125" />
+          <ConnectorPoint PointX="4.791666666666667" PointY="6.0312499999999991" />
+          <ConnectorPoint PointX="4.958333333333333" PointY="6.03125" />
+          <ConnectorPoint PointX="6" PointY="6.03125" />
+        </AssociationConnector>
+        <AssociationConnector Association="AURORAModel.FK_GoldPledge_CategoryPledgeGold" ManuallyRouted="false">
+          <ConnectorPoint PointX="1.5" PointY="25.922841796875" />
+          <ConnectorPoint PointX="1.1249995" PointY="25.922841796875" />
+          <ConnectorPoint PointX="1.1249995" PointY="29.75" />
+        </AssociationConnector>
+        <AssociationConnector Association="AURORAModel.FK_DetailSale_GoldModel" ManuallyRouted="false">
+          <ConnectorPoint PointX="3.75" PointY="10.595602213541667" />
+          <ConnectorPoint PointX="3.75" PointY="13.615143229166666" />
+          <ConnectorPoint PointX="4.0729191666666669" PointY="13.615143229166666" />
+          <ConnectorPoint PointX="4.2395858333333329" PointY="13.615143229166666" />
+          <ConnectorPoint PointX="4.791666666666667" PointY="13.615143229166666" />
+          <ConnectorPoint PointX="4.958333333333333" PointY="13.615143229166666" />
+          <ConnectorPoint PointX="5.25" PointY="13.615143229166666" />
+        </AssociationConnector>
+        <AssociationConnector Association="AURORAModel.FK_Sale_DetailSale" ManuallyRouted="false">
+          <ConnectorPoint PointX="6.75" PointY="13.740143229166666" />
+          <ConnectorPoint PointX="6.7916591666666672" PointY="13.740143229166664" />
+          <ConnectorPoint PointX="7.0833358333333329" PointY="13.740143229166666" />
+          <ConnectorPoint PointX="7.2291691666666669" PointY="13.740143229166666" />
+          <ConnectorPoint PointX="7.3958358333333329" PointY="13.740143229166666" />
+          <ConnectorPoint PointX="7.5" PointY="13.740143229166666" />
+        </AssociationConnector>
+        <AssociationConnector Association="AURORAModel.FK_Employee_Permis" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="4.0718489583333328" />
+          <ConnectorPoint PointX="5.25" PointY="4.0718489583333328" />
+        </AssociationConnector>
+        <AssociationConnector Association="AURORAModel.FK_OrderGold_Employee" ManuallyRouted="false">
+          <ConnectorPoint PointX="6.375" PointY="4.2686979166666656" />
+          <ConnectorPoint PointX="6.375" PointY="5.625" />
+        </AssociationConnector>
+        <AssociationConnector Association="AURORAModel.FK_PledgeGold_Employee" ManuallyRouted="false">
+          <ConnectorPoint PointX="5.25" PointY="4.2686979166666656" />
+          <ConnectorPoint PointX="4.875" PointY="4.6436979166666656" />
+          <ConnectorPoint PointX="4.875" PointY="31.759348958333334" />
+          <ConnectorPoint PointX="4.5" PointY="31.759348958333334" />
+        </AssociationConnector>
+        <AssociationConnector Association="AURORAModel.FK_Sale_Employee" ManuallyRouted="false">
+          <ConnectorPoint PointX="6.75" PointY="1.65625" />
+          <ConnectorPoint PointX="7.625" PointY="1.65625" />
+          <ConnectorPoint PointX="7.625" PointY="12.875" />
+        </AssociationConnector>
+        <AssociationConnector Association="AURORAModel.FK_GoldModel_FormatGold" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="12.365143229166666" />
+          <ConnectorPoint PointX="2.5416666666666665" PointY="12.365143229166664" />
+          <ConnectorPoint PointX="2.8958333333333335" PointY="12.365143229166666" />
+          <ConnectorPoint PointX="3.3437475" PointY="12.365143229166666" />
+          <ConnectorPoint PointX="3.3437475" PointY="10.595602213541667" />
+        </AssociationConnector>
+        <AssociationConnector Association="AURORAModel.FK_OrderGold_FormatGold" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="11.876977166666666" />
+          <ConnectorPoint PointX="2.5416666666666665" PointY="11.876977166666665" />
+          <ConnectorPoint PointX="2.8958333333333335" PointY="11.876977166666666" />
+          <ConnectorPoint PointX="3.2604141666666666" PointY="11.876977166666666" />
+          <ConnectorPoint PointX="3.4270808333333336" PointY="11.876977166666666" />
+          <ConnectorPoint PointX="3.6666666666666665" PointY="11.876977166666666" />
+          <ConnectorPoint PointX="3.8333333333333335" PointY="11.876977166666666" />
+          <ConnectorPoint PointX="4.0729191666666669" PointY="11.876977166666666" />
+          <ConnectorPoint PointX="4.2395858333333329" PointY="11.876977166666666" />
+          <ConnectorPoint PointX="4.791666666666667" PointY="11.876977166666666" />
+          <ConnectorPoint PointX="4.958333333333333" PointY="11.876977166666666" />
+          <ConnectorPoint PointX="6.7916591666666672" PointY="11.876977166666665" />
+          <ConnectorPoint PointX="7.0833358333333329" PointY="11.876977166666666" />
+          <ConnectorPoint PointX="7.125" PointY="11.876977166666666" />
+          <ConnectorPoint PointX="7.125" PointY="11.451315104166667" />
+        </AssociationConnector>
+        <AssociationConnector Association="AURORAModel.FK_GoldPledge_FormatPledgeGold" ManuallyRouted="false">
+          <ConnectorPoint PointX="1.875" PointY="29.095683593749996" />
+          <ConnectorPoint PointX="1.875" PointY="29.75" />
+        </AssociationConnector>
+        <AssociationConnector Association="AURORAModel.FK_GoldModel_GoldWeight" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="14.893992513020834" />
+          <ConnectorPoint PointX="2.5416666666666665" PointY="14.893992513020832" />
+          <ConnectorPoint PointX="2.8958333333333335" PointY="14.893992513020834" />
+          <ConnectorPoint PointX="4.1562525" PointY="14.893992513020834" />
+          <ConnectorPoint PointX="4.1562525" PointY="10.595602213541667" />
+        </AssociationConnector>
+        <AssociationConnector Association="AURORAModel.FK_GoldModel_PatternGold" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="16.626152846153843" />
+          <ConnectorPoint PointX="2.625" PointY="16.251152846153843" />
+          <ConnectorPoint PointX="2.625" PointY="7.5407442565104166" />
+          <ConnectorPoint PointX="3" PointY="7.5407442565104166" />
+        </AssociationConnector>
+        <AssociationConnector Association="AURORAModel.FK_GoldModel_PercentGold" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="19.188460538461534" />
+          <ConnectorPoint PointX="2.6285744349011204" PointY="18.809886103560412" />
+          <ConnectorPoint PointX="2.7464255650988791" PointY="18.692034973362656" />
+          <ConnectorPoint PointX="2.8125" PointY="18.625960538461534" />
+          <ConnectorPoint PointX="2.8125" PointY="9.6510493632812526" />
+          <ConnectorPoint PointX="3" PointY="9.6510493632812526" />
+        </AssociationConnector>
+        <AssociationConnector Association="AURORAModel.FK_GoldModel_SizeGold" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="21.688460538461534" />
+          <ConnectorPoint PointX="2.6875" PointY="21.250960538461534" />
+          <ConnectorPoint PointX="2.6875" PointY="8.0923683847656243" />
+          <ConnectorPoint PointX="3" PointY="8.0923683847656243" />
+        </AssociationConnector>
+        <AssociationConnector Association="AURORAModel.FK_GoldPledge_GoldPledgeWeight" ManuallyRouted="false">
+          <ConnectorPoint PointX="1.875" PointY="34.75" />
+          <ConnectorPoint PointX="1.875" PointY="33.653300781249996" />
+        </AssociationConnector>
+        <AssociationConnector Association="AURORAModel.FK_GoldPledge_PatternPledgeGold" ManuallyRouted="false">
+          <ConnectorPoint PointX="1.5" PointY="37.922841796875005" />
+          <ConnectorPoint PointX="1.1249995" PointY="37.922841796875005" />
+          <ConnectorPoint PointX="1.1249995" PointY="33.653300781249996" />
+        </AssociationConnector>
+        <AssociationConnector Association="AURORAModel.FK_GoldPledge_PercentPledgeGold" ManuallyRouted="false">
+          <ConnectorPoint PointX="1.5" PointY="40.297841796875" />
+          <ConnectorPoint PointX="1.0989567083333331" PointY="40.297841796875" />
+          <ConnectorPoint PointX="0.93229004166666651" PointY="40.297841796875" />
+          <ConnectorPoint PointX="0.90624725" PointY="40.297841796875" />
+          <ConnectorPoint PointX="0.90624725" PointY="33.653300781249996" />
+        </AssociationConnector>
+        <AssociationConnector Association="AURORAModel.FK_GoldPledge_SizePledgeGold" ManuallyRouted="false">
+          <ConnectorPoint PointX="1.5" PointY="42.672841796875" />
+          <ConnectorPoint PointX="1.0156233749999999" PointY="42.672841796875" />
+          <ConnectorPoint PointX="1.0156233749999999" PointY="33.653300781249996" />
+        </AssociationConnector>
+        <AssociationConnector Association="AURORAModel.FK_PledgeGold_GoldPledge" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="31.759348958333334" />
+          <ConnectorPoint PointX="3" PointY="31.759348958333334" />
+        </AssociationConnector>
+        <AssociationConnector Association="AURORAModel.FK_OrderGold_GoldWeight" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="15.372241269531251" />
+          <ConnectorPoint PointX="2.5416666666666665" PointY="15.37224126953125" />
+          <ConnectorPoint PointX="2.8958333333333335" PointY="15.372241269531251" />
+          <ConnectorPoint PointX="4.791666666666667" PointY="15.372241269531251" />
+          <ConnectorPoint PointX="4.958333333333333" PointY="15.372241269531251" />
+          <ConnectorPoint PointX="6.9374975" PointY="15.372241269531251" />
+          <ConnectorPoint PointX="6.9374975" PointY="11.451315104166667" />
+        </AssociationConnector>
+        <AssociationConnector Association="AURORAModel.FK_Member_Province" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="18.672841796875" />
+          <ConnectorPoint PointX="4.791666666666667" PointY="18.672841796875" />
+          <ConnectorPoint PointX="4.958333333333333" PointY="18.672841796875" />
+          <ConnectorPoint PointX="5.25" PointY="18.672841796875" />
+        </AssociationConnector>
+        <AssociationConnector Association="AURORAModel.FK_OrderGold_Member" ManuallyRouted="false">
+          <ConnectorPoint PointX="6.75" PointY="18.6631982421875" />
+          <ConnectorPoint PointX="6.7916591666666672" PointY="18.6631982421875" />
+          <ConnectorPoint PointX="7.0833358333333329" PointY="18.6631982421875" />
+          <ConnectorPoint PointX="7.3125025" PointY="18.6631982421875" />
+          <ConnectorPoint PointX="7.3125025" PointY="11.451315104166667" />
+        </AssociationConnector>
+        <AssociationConnector Association="AURORAModel.FK_PledgeGold_Member" ManuallyRouted="false">
+          <ConnectorPoint PointX="5.3134605384615385" PointY="20.326396484375003" />
+          <ConnectorPoint PointX="5.0625" PointY="20.577357022836541" />
+          <ConnectorPoint PointX="5.0625" PointY="30.848422479166672" />
+          <ConnectorPoint PointX="4.958333333333333" PointY="30.848422479166672" />
+          <ConnectorPoint PointX="4.791666666666667" PointY="30.848422479166672" />
+          <ConnectorPoint PointX="4.5" PointY="30.848422479166672" />
+        </AssociationConnector>
+        <AssociationConnector Association="AURORAModel.FK_Sale_Member" ManuallyRouted="false">
+          <ConnectorPoint PointX="6.75" PointY="17.800346621093752" />
+          <ConnectorPoint PointX="6.7916591666666672" PointY="17.800346621093752" />
+          <ConnectorPoint PointX="7.0833358333333329" PointY="17.800346621093752" />
+          <ConnectorPoint PointX="7.2291691666666669" PointY="17.800346621093752" />
+          <ConnectorPoint PointX="7.3958358333333329" PointY="17.800346621093752" />
+          <ConnectorPoint PointX="7.7604141666666671" PointY="17.800346621093752" />
+          <ConnectorPoint PointX="7.9270808333333331" PointY="17.800346621093752" />
+          <ConnectorPoint PointX="8.25" PointY="17.800346621093752" />
+          <ConnectorPoint PointX="8.25" PointY="16.393697916666667" />
+        </AssociationConnector>
+        <AssociationConnector Association="AURORAModel.FK_OrderGold_PatternGold" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="16.813078923076922" />
+          <ConnectorPoint PointX="2.6041666666666665" PointY="16.813078923076922" />
+          <ConnectorPoint PointX="2.8958333333333335" PointY="16.813078923076922" />
+          <ConnectorPoint PointX="4.791666666666667" PointY="16.813078923076922" />
+          <ConnectorPoint PointX="4.958333333333333" PointY="16.813078923076922" />
+          <ConnectorPoint PointX="6.906245" PointY="16.813078923076922" />
+          <ConnectorPoint PointX="6.906245" PointY="11.451315104166667" />
+        </AssociationConnector>
+        <AssociationConnector Association="AURORAModel.FK_OrderGold_Payment" ManuallyRouted="false">
+          <ConnectorPoint PointX="6.75" PointY="31.807444661458334" />
+          <ConnectorPoint PointX="6.96875" PointY="31.807444661458334" />
+          <ConnectorPoint PointX="6.96875" PointY="11.451315104166667" />
+        </AssociationConnector>
+        <AssociationConnector Association="AURORAModel.FK_OrderGold_PercentGold" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="20.650940755208335" />
+          <ConnectorPoint PointX="2.6041666666666665" PointY="20.650940755208335" />
+          <ConnectorPoint PointX="2.7708333333333335" PointY="20.650940755208335" />
+          <ConnectorPoint PointX="4.791666666666667" PointY="20.650940755208335" />
+          <ConnectorPoint PointX="4.958333333333333" PointY="20.650940755208335" />
+          <ConnectorPoint PointX="6.8749925" PointY="20.650940755208335" />
+          <ConnectorPoint PointX="6.8749925" PointY="11.451315104166667" />
+        </AssociationConnector>
+        <AssociationConnector Association="AURORAModel.FK_OrderGold_SizeGold" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="22.5819752822516" />
+          <ConnectorPoint PointX="4.791666666666667" PointY="22.5819752822516" />
+          <ConnectorPoint PointX="4.958333333333333" PointY="22.5819752822516" />
+          <ConnectorPoint PointX="4.979166666666667" PointY="22.5819752822516" />
+          <ConnectorPoint PointX="5.145833333333333" PointY="22.5819752822516" />
+          <ConnectorPoint PointX="7.0000025" PointY="22.5819752822516" />
+          <ConnectorPoint PointX="7.0000025" PointY="11.451315104166667" />
+        </AssociationConnector>
+        <AssociationConnector Association="AURORAModel.FK_Payment_PledgeGold" ManuallyRouted="false">
+          <ConnectorPoint PointX="4.5" PointY="32.437119140625" />
+          <ConnectorPoint PointX="5.25" PointY="32.437119140625" />
+        </AssociationConnector>
+        <AssociationConnector Association="AURORAModel.FK_Sale_Payment" ManuallyRouted="false">
+          <ConnectorPoint PointX="6.75" PointY="31.184969830729166" />
+          <ConnectorPoint PointX="6.885416666666667" PointY="31.184969830729166" />
+          <ConnectorPoint PointX="7.052083333333333" PointY="31.184969830729166" />
+          <ConnectorPoint PointX="7.8437475" PointY="31.184969830729166" />
+          <ConnectorPoint PointX="7.8437475" PointY="16.393697916666667" />
+        </AssociationConnector>
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>
