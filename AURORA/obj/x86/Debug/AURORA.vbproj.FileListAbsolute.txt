@@ -34,3 +34,9 @@ F:\_Work\pjd\AURORA\Code\pjd-aurora\AURORA\obj\x86\Debug\AURORA.cmpLabel.resourc
 F:\_Work\pjd\AURORA\Code\pjd-aurora\AURORA\obj\x86\Debug\AURORA.frmMenuAdmin.resources
 F:\_Work\pjd\AURORA\Code\pjd-aurora\AURORA\obj\x86\Debug\AURORA.frmBase.resources
 F:\_Work\pjd\AURORA\Code\pjd-aurora\AURORA\obj\x86\Debug\AURORA.resFormName.resources
+F:\_Work\pjd\AURORA\Code\pjd-aurora\AURORA\obj\x86\Debug\AURORA.frmEmployeeMember_Showall.resources
+F:\_Work\pjd\AURORA\Code\pjd-aurora\AURORA\obj\x86\Debug\AURORA.frmEmployeePledgeGold.resources
+F:\_Work\pjd\AURORA\Code\pjd-aurora\AURORA\obj\x86\Debug\AURORA.frmEmployeeRegister.resources
+F:\_Work\pjd\AURORA\Code\pjd-aurora\AURORA\obj\x86\Debug\AURORA.frmEmployeeSaleGold.resources
+F:\_Work\pjd\AURORA\Code\pjd-aurora\AURORA\obj\x86\Debug\AURORA.frmMenuEmployee.resources
+F:\_Work\pjd\AURORA\Code\pjd-aurora\AURORA\obj\x86\Debug\AURORA.frmMenuOwner.resources

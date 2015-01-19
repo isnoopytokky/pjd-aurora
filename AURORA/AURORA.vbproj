@@ -90,6 +90,9 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Context\SaleContext.vb" />
+    <Compile Include="Context\MemberContext.vb" />
+    <Compile Include="Context\ProvinceContext.vb" />
     <Compile Include="Context\PermisContext.vb" />
     <Compile Include="Context\EmployeeContext.vb" />
     <Compile Include="Database\Entity.Designer.vb">
@@ -103,6 +106,30 @@
     </Compile>
     <Compile Include="Forms\cmpLabel.vb">
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\frmEmployeeMember_Showall.Designer.vb">
+      <DependentUpon>frmEmployeeMember_Showall.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmEmployeeMember_Showall.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmEmployeePledgeGold.Designer.vb">
+      <DependentUpon>frmEmployeePledgeGold.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmEmployeePledgeGold.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmEmployeeRegister.Designer.vb">
+      <DependentUpon>frmEmployeeRegister.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmEmployeeRegister.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmEmployeeSaleGold.Designer.vb">
+      <DependentUpon>frmEmployeeSaleGold.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmEmployeeSaleGold.vb">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\frmLogin.Designer.vb">
       <DependentUpon>frmLogin.vb</DependentUpon>
@@ -160,11 +187,29 @@
     <EmbeddedResource Include="Forms\cmpLabel.resx">
       <DependentUpon>cmpLabel.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmEmployeeMember_Showall.resx">
+      <DependentUpon>frmEmployeeMember_Showall.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmEmployeePledgeGold.resx">
+      <DependentUpon>frmEmployeePledgeGold.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmEmployeeRegister.resx">
+      <DependentUpon>frmEmployeeRegister.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmEmployeeSaleGold.resx">
+      <DependentUpon>frmEmployeeSaleGold.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmLogin.resx">
       <DependentUpon>frmLogin.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmMenuAdmin.resx">
       <DependentUpon>frmMenuAdmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMenuEmployee.resx">
+      <DependentUpon>frmMenuEmployee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMenuOwner.resx">
+      <DependentUpon>frmMenuOwner.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmBase.resx">
       <DependentUpon>frmBase.vb</DependentUpon>

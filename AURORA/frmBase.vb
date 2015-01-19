@@ -1,5 +1,6 @@
 ﻿Public Class frmBase
     Public _parent As Form
+    Public _current_user As New Employee
 
     Private Sub frmBase_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -8,8 +9,6 @@
         If (Not name Is "Nothing") Then
             Me.Text = name
         End If
-
-
 
     End Sub
 

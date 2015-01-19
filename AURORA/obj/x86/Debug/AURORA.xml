@@ -6,36 +6,7 @@ AURORA
 </name>
 </assembly>
 <members>
-<member name="P:AURORA.My.Resources.resFormName.ResourceManager">
-	<summary>
-  Returns the cached ResourceManager instance used by this class.
-</summary>
-</member><member name="P:AURORA.My.Resources.resFormName.Culture">
-	<summary>
-  Overrides the current thread's CurrentUICulture property for all
-  resource lookups using this strongly typed resource class.
-</summary>
-</member><member name="P:AURORA.My.Resources.resFormName.frmLogin">
-	<summary>
-  Looks up a localized string similar to เข้าสู้ระบบ.
-</summary>
-</member><member name="P:AURORA.My.Resources.resFormName.frmMenuAdmin">
-	<summary>
-  Looks up a localized string similar to หน้าหลักแอดมิน.
-</summary>
-</member><member name="P:AURORA.My.Resources.resFormName.frmMenuEmployee">
-	<summary>
-  Looks up a localized string similar to หน้าหลักพนักงาน.
-</summary>
-</member><member name="P:AURORA.My.Resources.resFormName.frmMenuOwner">
-	<summary>
-  Looks up a localized string similar to หน้าหลักเจ้าจองระบบ.
-</summary>
-</member><member name="T:AURORA.My.Resources.resFormName">
-	<summary>
-  A strongly-typed resource class, for looking up localized strings, etc.
-</summary>
-</member><member name="P:AURORA.My.Resources.Resources.ResourceManager">
+<member name="P:AURORA.My.Resources.Resources.ResourceManager">
 	<summary>
   Returns the cached ResourceManager instance used by this class.
 </summary>
@@ -1298,6 +1269,35 @@ AURORA
 	<summary>
  No Metadata Documentation available.
  </summary>
+</member><member name="P:AURORA.My.Resources.resFormName.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:AURORA.My.Resources.resFormName.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:AURORA.My.Resources.resFormName.frmLogin">
+	<summary>
+  Looks up a localized string similar to เข้าสู้ระบบ.
+</summary>
+</member><member name="P:AURORA.My.Resources.resFormName.frmMenuAdmin">
+	<summary>
+  Looks up a localized string similar to หน้าหลักแอดมิน.
+</summary>
+</member><member name="P:AURORA.My.Resources.resFormName.frmMenuEmployee">
+	<summary>
+  Looks up a localized string similar to หน้าหลักพนักงาน.
+</summary>
+</member><member name="P:AURORA.My.Resources.resFormName.frmMenuOwner">
+	<summary>
+  Looks up a localized string similar to หน้าหลักเจ้าจองระบบ.
+</summary>
+</member><member name="T:AURORA.My.Resources.resFormName">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
 </member>
 </members>
 </doc>
